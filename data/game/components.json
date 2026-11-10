@@ -1,0 +1,222 @@
+{
+ "engine": {
+  "standard": {
+   "intro": 2100
+  },
+  "xl": {
+   "intro": 2579,
+   "extinct": 2865,
+   "reintro": 3035
+  },
+  "xl_clan": {
+   "clan_only": true
+  },
+  "light": {
+   "intro": 3062,
+   "extinct": null,
+   "reintro": null
+  },
+  "compact": {
+   "intro": 3066,
+   "extinct": null,
+   "reintro": null
+  },
+  "xxl": {
+   "intro": 3125,
+   "extinct": null,
+   "reintro": null
+  },
+  "xxl_clan": {
+   "clan_only": true
+  },
+  "ice": {
+   "intro": 2100
+  },
+  "fuel_cell": {
+   "intro": 2300
+  },
+  "fission": {
+   "intro": 2470
+  }
+ },
+ "structure": {
+  "standard": {
+   "intro": 2100
+  },
+  "endo": {
+   "intro": 2487,
+   "extinct": 2850,
+   "reintro": 3035
+  },
+  "endo_clan": {
+   "clan_only": true
+  },
+  "industrial": {
+   "intro": 2350
+  },
+  "endo_composite": {
+   "intro": 3067
+  },
+  "endo_composite_clan": {
+   "clan_only": true
+  },
+  "composite": {
+   "intro": 3061
+  },
+  "reinforced": {
+   "intro": 3057
+  },
+  "endo_proto": {
+   "intro": 2471,
+   "extinct": 2571
+  }
+ },
+ "armor": {
+  "standard": {
+   "intro": 2100
+  },
+  "ferro": {
+   "intro": 2571,
+   "extinct": 2810,
+   "reintro": 3040
+  },
+  "ferro_clan": {
+   "clan_only": true
+  },
+  "light_ferro": {
+   "intro": 3067
+  },
+  "heavy_ferro": {
+   "intro": 3069
+  },
+  "stealth": {
+   "intro": 3063
+  },
+  "ferro_lamellor": {
+   "clan_only": true
+  },
+  "reflective": {
+   "intro": 3061
+  },
+  "reflective_clan": {
+   "clan_only": true
+  },
+  "reactive": {
+   "intro": 3063
+  },
+  "reactive_clan": {
+   "clan_only": true
+  },
+  "hardened": {
+   "intro": 3047
+  },
+  "heavy_industrial": {
+   "intro": 2460
+  },
+  "industrial": {
+   "intro": 2439
+  },
+  "commercial": {
+   "intro": 2300
+  },
+  "primitive": {
+   "intro": 2290
+  },
+  "ballistic_reinforced": {
+   "intro": 3131
+  },
+  "impact_resistant": {
+   "intro": 3103
+  },
+  "anti_penetrative": {
+   "intro": 3114
+  },
+  "heat_dissipating": {
+   "intro": 3123
+  },
+  "ferro_proto": {
+   "intro": 2557,
+   "extinct": 2571
+  }
+ },
+ "gyro": {
+  "standard": {
+   "intro": 2100
+  },
+  "xl": {
+   "intro": 3067
+  },
+  "compact": {
+   "intro": 3068
+  },
+  "heavy_duty": {
+   "intro": 3067
+  },
+  "none": {
+   "intro": 3074
+  }
+ },
+ "cockpit": {
+  "standard": {
+   "intro": 2100
+  },
+  "small": {
+   "intro": 3067
+  },
+  "torso": {
+   "intro": 3053
+  },
+  "industrial": {
+   "intro": 2469
+  },
+  "primitive": {
+   "intro": 2430
+  },
+  "primitive_industrial": {
+   "intro": 2300
+  },
+  "interface": {
+   "intro": 3074
+  },
+  "command_console": {
+   "intro": 2631,
+   "extinct": 2850,
+   "reintro": 3030
+  }
+ },
+ "hs": {
+  "single": {
+   "intro": 2100
+  },
+  "double": {
+   "intro": 2567,
+   "extinct": 2865,
+   "reintro": 3040
+  },
+  "double_clan": {
+   "clan_only": true
+  },
+  "laser": {
+   "clan_only": true
+  },
+  "compact": {
+   "intro": 3058
+  }
+ },
+ "myomer": {
+  "standard": {
+   "intro": 2100
+  },
+  "tsm": {
+   "intro": 3050,
+   "extinct": null,
+   "reintro": null
+  },
+  "industrial_tsm": {
+   "intro": 3045
+  },
+  "super_cooled": {
+   "intro": 3132
+  }
+ }
+}

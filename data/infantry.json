@@ -1,0 +1,490 @@
+{
+ "_comment": "Infantry platoons and battle armour squads. They are bought whole, not built: BV and cost are fixed. 'per' is damage per living trooper per volley (platoons: summed and rounded up; battle armour: per suit that hits).",
+ "units": [
+  {
+   "id": "Foot Platoon (Rifle)",
+   "chassis": "Foot Platoon",
+   "model": "(Rifle)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "foot",
+   "tons": 3,
+   "cruise": 1,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 28,
+   "suit_armor": 0,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 60,
+   "cost": 380000,
+   "weapons": [
+    {
+     "name": "Auto-rifles",
+     "wtype": "rifle",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 0.27
+    }
+   ],
+   "sprite": "infantry/foot_rifle.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Foot Platoon (MG)",
+   "chassis": "Foot Platoon",
+   "model": "(MG)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "foot",
+   "tons": 3,
+   "cruise": 1,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 28,
+   "suit_armor": 0,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 72,
+   "cost": 420000,
+   "weapons": [
+    {
+     "name": "Support machine guns",
+     "wtype": "mg",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 0.33
+    }
+   ],
+   "sprite": "infantry/foot_mg.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Foot Platoon (Laser)",
+   "chassis": "Foot Platoon",
+   "model": "(Laser)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "foot",
+   "tons": 3,
+   "cruise": 1,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 28,
+   "suit_armor": 0,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 84,
+   "cost": 520000,
+   "weapons": [
+    {
+     "name": "Laser rifles",
+     "wtype": "laser",
+     "s": 2,
+     "m": 4,
+     "l": 6,
+     "per": 0.27
+    }
+   ],
+   "sprite": "infantry/foot_laser.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Foot Platoon (SRM)",
+   "chassis": "Foot Platoon",
+   "model": "(SRM)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "foot",
+   "tons": 3,
+   "cruise": 1,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 28,
+   "suit_armor": 0,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 98,
+   "cost": 560000,
+   "weapons": [
+    {
+     "name": "Man-pack SRMs",
+     "wtype": "srm",
+     "s": 2,
+     "m": 4,
+     "l": 6,
+     "per": 0.4
+    }
+   ],
+   "sprite": "infantry/foot_srm.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Motorized Platoon (Rifle)",
+   "chassis": "Motorized Platoon",
+   "model": "(Rifle)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "motorized",
+   "tons": 3,
+   "cruise": 3,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 28,
+   "suit_armor": 0,
+   "anti_mech": false,
+   "armor_div": 1,
+   "bv": 78,
+   "cost": 520000,
+   "weapons": [
+    {
+     "name": "Auto-rifles",
+     "wtype": "rifle",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 0.27
+    }
+   ],
+   "sprite": "infantry/motorized_rifle.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Motorized Platoon (SRM)",
+   "chassis": "Motorized Platoon",
+   "model": "(SRM)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "motorized",
+   "tons": 3,
+   "cruise": 3,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 28,
+   "suit_armor": 0,
+   "anti_mech": false,
+   "armor_div": 1,
+   "bv": 118,
+   "cost": 700000,
+   "weapons": [
+    {
+     "name": "Man-pack SRMs",
+     "wtype": "srm",
+     "s": 2,
+     "m": 4,
+     "l": 6,
+     "per": 0.4
+    }
+   ],
+   "sprite": "infantry/motorized_srm.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Jump Platoon (Laser)",
+   "chassis": "Jump Platoon",
+   "model": "(Laser)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "jump",
+   "tons": 3,
+   "cruise": 3,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 21,
+   "suit_armor": 0,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 92,
+   "cost": 760000,
+   "weapons": [
+    {
+     "name": "Laser rifles",
+     "wtype": "laser",
+     "s": 2,
+     "m": 4,
+     "l": 6,
+     "per": 0.27
+    }
+   ],
+   "sprite": "infantry/jump_laser.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Jump Platoon (Flamer)",
+   "chassis": "Jump Platoon",
+   "model": "(Flamer)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "jump",
+   "tons": 3,
+   "cruise": 3,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 21,
+   "suit_armor": 0,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 80,
+   "cost": 700000,
+   "weapons": [
+    {
+     "name": "Man-pack flamers",
+     "wtype": "flamer",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 0.33
+    }
+   ],
+   "sprite": "infantry/jump_flamer.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Mechanized Platoon (MG)",
+   "chassis": "Mechanized Platoon",
+   "model": "(MG)",
+   "kind": "vehicle",
+   "type": "infantry",
+   "motion": "mechanized",
+   "tons": 5,
+   "cruise": 3,
+   "year": 2100,
+   "tech": "IS",
+   "role": "Infantry",
+   "troopers": 20,
+   "suit_armor": 0,
+   "anti_mech": false,
+   "armor_div": 2,
+   "bv": 96,
+   "cost": 900000,
+   "weapons": [
+    {
+     "name": "Vehicle machine guns",
+     "wtype": "mg",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 0.4
+    }
+   ],
+   "sprite": "infantry/mechanized_mg.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "IS Standard Battle Armor (Small Laser)",
+   "chassis": "IS Standard Battle Armor",
+   "model": "(Small Laser)",
+   "kind": "vehicle",
+   "type": "battle_armor",
+   "motion": "jump",
+   "tons": 4,
+   "cruise": 3,
+   "year": 3050,
+   "tech": "IS",
+   "role": "Battle Armor",
+   "troopers": 4,
+   "suit_armor": 10,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 172,
+   "cost": 1500000,
+   "weapons": [
+    {
+     "name": "Small lasers",
+     "wtype": "laser",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 3
+    }
+   ],
+   "sprite": "infantry/is_standard.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "IS Standard Battle Armor (MG)",
+   "chassis": "IS Standard Battle Armor",
+   "model": "(MG)",
+   "kind": "vehicle",
+   "type": "battle_armor",
+   "motion": "jump",
+   "tons": 4,
+   "cruise": 3,
+   "year": 3050,
+   "tech": "IS",
+   "role": "Battle Armor",
+   "troopers": 4,
+   "suit_armor": 10,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 148,
+   "cost": 1400000,
+   "weapons": [
+    {
+     "name": "Machine guns",
+     "wtype": "mg",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 2
+    }
+   ],
+   "sprite": "infantry/is_standard.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "IS Standard Battle Armor (Flamer)",
+   "chassis": "IS Standard Battle Armor",
+   "model": "(Flamer)",
+   "kind": "vehicle",
+   "type": "battle_armor",
+   "motion": "jump",
+   "tons": 4,
+   "cruise": 3,
+   "year": 3050,
+   "tech": "IS",
+   "role": "Battle Armor",
+   "troopers": 4,
+   "suit_armor": 10,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 144,
+   "cost": 1400000,
+   "weapons": [
+    {
+     "name": "Flamers",
+     "wtype": "flamer",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 2
+    }
+   ],
+   "sprite": "infantry/is_standard.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Infiltrator Mk II (Magshot)",
+   "chassis": "Infiltrator Mk II",
+   "model": "(Magshot)",
+   "kind": "vehicle",
+   "type": "battle_armor",
+   "motion": "jump",
+   "tons": 4,
+   "cruise": 3,
+   "year": 3060,
+   "tech": "IS",
+   "role": "Battle Armor",
+   "troopers": 4,
+   "suit_armor": 6,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 210,
+   "cost": 2200000,
+   "weapons": [
+    {
+     "name": "Magshot gauss rifles",
+     "wtype": "gauss",
+     "s": 3,
+     "m": 6,
+     "l": 9,
+     "per": 2
+    }
+   ],
+   "sprite": "infantry/infiltrator_ii.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Elemental (Small Laser)",
+   "chassis": "Elemental",
+   "model": "(Small Laser)",
+   "kind": "vehicle",
+   "type": "battle_armor",
+   "motion": "jump",
+   "tons": 5,
+   "cruise": 3,
+   "year": 2868,
+   "tech": "Clan",
+   "role": "Battle Armor",
+   "troopers": 5,
+   "suit_armor": 10,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 448,
+   "cost": 3400000,
+   "weapons": [
+    {
+     "name": "Small lasers",
+     "wtype": "laser",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 3
+    },
+    {
+     "name": "SRM-2 packs",
+     "wtype": "srm",
+     "s": 3,
+     "m": 6,
+     "l": 9,
+     "per": 2,
+     "missiles": 2,
+     "salvos": 2
+    }
+   ],
+   "sprite": "infantry/elemental_laser.png",
+   "wreck": "infantry/fallen.png"
+  },
+  {
+   "id": "Elemental (Flamer)",
+   "chassis": "Elemental",
+   "model": "(Flamer)",
+   "kind": "vehicle",
+   "type": "battle_armor",
+   "motion": "jump",
+   "tons": 5,
+   "cruise": 3,
+   "year": 2868,
+   "tech": "Clan",
+   "role": "Battle Armor",
+   "troopers": 5,
+   "suit_armor": 10,
+   "anti_mech": true,
+   "armor_div": 1,
+   "bv": 420,
+   "cost": 3300000,
+   "weapons": [
+    {
+     "name": "Flamers",
+     "wtype": "flamer",
+     "s": 1,
+     "m": 2,
+     "l": 3,
+     "per": 2
+    },
+    {
+     "name": "SRM-2 packs",
+     "wtype": "srm",
+     "s": 3,
+     "m": 6,
+     "l": 9,
+     "per": 2,
+     "missiles": 2,
+     "salvos": 2
+    }
+   ],
+   "sprite": "infantry/elemental_flamer.png",
+   "wreck": "infantry/fallen.png"
+  }
+ ]
+}

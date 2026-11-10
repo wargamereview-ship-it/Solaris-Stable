@@ -1,0 +1,1090 @@
+{
+ "_note": "Mercenary Company mode tuning. Mission lengths, pay and tempo multipliers follow MekHQ's Against the Bot. Values marked approx are estimates, not book numbers. Money in C-bills.",
+ "start": {
+  "years": [
+   3015,
+   3020,
+   3025,
+   3030,
+   3039,
+   3045,
+   3050
+  ],
+  "default_year": 3025,
+  "halls": [
+   "Galatea",
+   "Outreach",
+   "Solaris",
+   "Westerhand",
+   "Herotitus",
+   "Noisiel",
+   "Northwind",
+   "Astrokaszy",
+   "Fletcher (CC)",
+   "Kandersteg",
+   "Arc-Royal",
+   "Antallos (Port Krin)",
+   "Le Blanc"
+  ],
+  "packages": {
+   "lance": {
+    "label": "Mercenary lance",
+    "desc": "Four 'Mechs and their warriors, two techs, a doctor and an admin. 2.5 million C-bills.",
+    "mechs": 4,
+    "vehicles": 0,
+    "mech_bv": 3600,
+    "vehicle_bv": 0,
+    "techs": 2,
+    "astechs": 12,
+    "doctors": 1,
+    "medics": 4,
+    "admins": 1,
+    "cash": 2500000
+   },
+   "combined": {
+    "label": "Combined-arms company",
+    "desc": "A 'Mech lance and a vehicle lance with crews, three techs, a doctor and two admins. 3 million C-bills.",
+    "mechs": 4,
+    "vehicles": 4,
+    "mech_bv": 3800,
+    "vehicle_bv": 2200,
+    "techs": 3,
+    "astechs": 18,
+    "doctors": 1,
+    "medics": 4,
+    "admins": 2,
+    "cash": 3000000
+   },
+   "company": {
+    "label": "Mercenary company",
+    "desc": "Two 'Mech lances and a vehicle lance, five techs, two doctors and two admins. 2 million C-bills.",
+    "mechs": 8,
+    "vehicles": 4,
+    "mech_bv": 7400,
+    "vehicle_bv": 2200,
+    "techs": 5,
+    "astechs": 30,
+    "doctors": 2,
+    "medics": 8,
+    "admins": 2,
+    "cash": 2000000
+   }
+  }
+ },
+ "calendar": {
+  "jump_recharge_days": 7,
+  "transit_days_by_class": {
+   "O": 14,
+   "B": 12,
+   "A": 10,
+   "F": 8,
+   "G": 7,
+   "K": 5,
+   "M": 3,
+   "D": 4,
+   "L": 3
+  },
+  "max_jump_ly": 30.0
+ },
+ "transport": {
+  "_approx": "charter cost per jump",
+  "per_mech": 20000,
+  "per_vehicle": 9000,
+  "per_person": 800,
+  "per_dropship_collar": 50000,
+  "mechs_per_dropship": 12,
+  "vehicles_per_dropship": 16
+ },
+ "salaries": {
+  "_approx": "MekHQ default base salaries",
+  "mechwarrior": 1500,
+  "vehicle_crew": 900,
+  "crewman": 600,
+  "tech": 800,
+  "astech": 400,
+  "doctor": 1500,
+  "medic": 400,
+  "admin": 500,
+  "experience_mult": {
+   "green": 0.6,
+   "regular": 1.0,
+   "veteran": 1.6,
+   "elite": 3.2
+  }
+ },
+ "monthly": {
+  "_approx": "overhead and upkeep",
+  "maintenance_pct_of_unit_value": 0.004,
+  "overhead_pct_of_salaries": 0.05,
+  "food_housing_per_person": 120
+ },
+ "hire_fee_months": 1,
+ "skills": {
+  "combat_levels": [
+   [
+    11,
+    "green"
+   ],
+   [
+    9,
+    "regular"
+   ],
+   [
+    7,
+    "veteran"
+   ],
+   [
+    0,
+    "elite"
+   ]
+  ],
+  "support_levels": [
+   [
+    7,
+    "green"
+   ],
+   [
+    6,
+    "regular"
+   ],
+   [
+    5,
+    "veteran"
+   ],
+   [
+    0,
+    "elite"
+   ]
+  ],
+  "xp_costs": {
+   "gunnery": [
+    0,
+    0,
+    32,
+    16,
+    8,
+    4,
+    2,
+    0,
+    0
+   ],
+   "piloting": [
+    0,
+    0,
+    24,
+    12,
+    6,
+    3,
+    2,
+    1,
+    0
+   ],
+   "support": [
+    0,
+    0,
+    32,
+    16,
+    8,
+    4,
+    2,
+    1,
+    0
+   ]
+  },
+  "xp_battle": 1,
+  "xp_victory": 1,
+  "xp_kill": 1,
+  "xp_kill_cap": 3
+ },
+ "repair": {
+  "_approx": "times in minutes and target number modifiers modelled on MekHQ",
+  "tech_minutes_per_day": 480,
+  "astechs_per_tech": 6,
+  "armor_min_per_point": 5,
+  "structure_min_per_point": 15,
+  "structure_min_min": 60,
+  "location_replace_min": 240,
+  "location_tn": 1,
+  "item_min": {
+   "weapon": 120,
+   "ammo": 30,
+   "heat_sink": 90,
+   "jump_jet": 60,
+   "misc": 90
+  },
+  "item_tn": {
+   "weapon": 0,
+   "ammo": -1,
+   "heat_sink": -1,
+   "jump_jet": 0,
+   "misc": 1
+  },
+  "fixed_min": {
+   "engine": 360,
+   "gyro": 200,
+   "cockpit": 300,
+   "sensors": 260,
+   "life_support": 180,
+   "shoulder": 120,
+   "upper_arm": 90,
+   "lower_arm": 90,
+   "hand": 60,
+   "hip": 120,
+   "upper_leg": 90,
+   "lower_leg": 90,
+   "foot": 60
+  },
+  "fixed_tn": {
+   "engine": 1,
+   "gyro": 0,
+   "cockpit": 2,
+   "sensors": 0,
+   "life_support": 0,
+   "shoulder": 0,
+   "upper_arm": 0,
+   "lower_arm": 0,
+   "hand": -1,
+   "hip": 0,
+   "upper_leg": 0,
+   "lower_leg": 0,
+   "foot": -1
+  },
+  "vehicle_min": {
+   "motive": 60,
+   "engine": 360,
+   "turret": 160,
+   "sensors": 260,
+   "stabilizer": 120
+  },
+  "vehicle_tn": {
+   "motive": 0,
+   "engine": 1,
+   "turret": 1,
+   "sensors": 0,
+   "stabilizer": 0
+  },
+  "reload_min": 15,
+  "modes": {
+   "standard": {
+    "time": 1.0,
+    "tn": 0,
+    "label": "Standard"
+   },
+   "extra": {
+    "time": 2.0,
+    "tn": -1,
+    "label": "Extra time (-1 TN, double time)"
+   },
+   "rush": {
+    "time": 0.5,
+    "tn": 1,
+    "label": "Rush (+1 TN, half time)"
+   }
+  },
+  "wreck_strip_fraction": 0.6,
+  "infantry": {
+   "trooper_min": 15,
+   "suit_min": 180,
+   "suit_armor_min": 20,
+   "avail": {
+    "infantry": "B",
+    "battle_armor": "D"
+   }
+  }
+ },
+ "parts": {
+  "_approx": "part prices",
+  "location_per_ton": {
+   "head": 900,
+   "limb": 1500,
+   "torso": 2500
+  },
+  "actuator_per_ton": {
+   "shoulder": 100,
+   "upper_arm": 100,
+   "lower_arm": 50,
+   "hand": 80,
+   "hip": 0,
+   "upper_leg": 150,
+   "lower_leg": 80,
+   "foot": 120
+  },
+  "sensors_per_ton": 2000,
+  "life_support": 50000,
+  "cockpit": 200000,
+  "motive_per_ton": 1200,
+  "turret_per_ton": 800,
+  "stabilizer": 25000,
+  "armor_per_ton": {
+   "standard": 10000,
+   "ferro": 20000,
+   "ferro_clan": 20000,
+   "light_ferro": 15000,
+   "heavy_ferro": 25000
+  },
+  "availability": {
+   "location": "C",
+   "actuator": "C",
+   "engine": "D",
+   "engine_xl": "E",
+   "gyro": "D",
+   "sensors": "C",
+   "life_support": "C",
+   "cockpit": "C",
+   "motive": "B",
+   "turret": "C",
+   "stabilizer": "C",
+   "armor": "B",
+   "armor_ferro": "E"
+  }
+ },
+ "procurement": {
+  "avail_mod": {
+   "A": -4,
+   "B": -3,
+   "C": -2,
+   "D": -1,
+   "E": 0,
+   "F": 2,
+   "X": 99
+  },
+  "hall_mod": -1,
+  "industrial_mod": -1,
+  "periphery_mod": 1,
+  "contract_mod": -1,
+  "delivery_days": [
+   3,
+   10
+  ],
+  "roll_every_days": 7
+ },
+ "markets": {
+  "unit_offers": {
+   "GREAT": [
+    10,
+    14
+   ],
+   "STANDARD": [
+    7,
+    10
+   ],
+   "MINOR": [
+    5,
+    7
+   ],
+   "QUESTIONABLE": [
+    4,
+    6
+   ],
+   "": [
+    2,
+    5
+   ]
+  },
+  "people_offers": {
+   "GREAT": [
+    10,
+    14
+   ],
+   "STANDARD": [
+    7,
+    10
+   ],
+   "MINOR": [
+    5,
+    7
+   ],
+   "QUESTIONABLE": [
+    4,
+    6
+   ],
+   "": [
+    2,
+    4
+   ]
+  },
+  "contract_offers": {
+   "GREAT": [
+    6,
+    9
+   ],
+   "STANDARD": [
+    4,
+    6
+   ],
+   "MINOR": [
+    3,
+    4
+   ],
+   "QUESTIONABLE": [
+    2,
+    3
+   ],
+   "": [
+    0,
+    2
+   ]
+  },
+  "unit_price_range": [
+   0.85,
+   1.25
+  ],
+  "sell_fraction": 0.5,
+  "part_sell_fraction": 0.5,
+  "role_weights": {
+   "mechwarrior": 30,
+   "vehicle_crew": 20,
+   "tech": 15,
+   "doctor": 5,
+   "admin": 8,
+   "astech": 12,
+   "medic": 10
+  },
+  "infantry_offers": {
+   "GREAT": [
+    1,
+    3
+   ],
+   "STANDARD": [
+    1,
+    2
+   ],
+   "MINOR": [
+    0,
+    2
+   ],
+   "QUESTIONABLE": [
+    0,
+    1
+   ],
+   "": [
+    0,
+    1
+   ]
+  },
+  "infantry_price_range": [
+   0.9,
+   1.2
+  ]
+ },
+ "missions": {
+  "garrison": {
+   "label": "Garrison Duty",
+   "months": [
+    9,
+    18
+   ],
+   "pay": 1.0,
+   "tempo": 1.0,
+   "offensive": false,
+   "lances": 1.0,
+   "weight": 20,
+   "enemy": "border"
+  },
+  "cadre": {
+   "label": "Cadre Duty",
+   "months": [
+    6,
+    12
+   ],
+   "pay": 0.8,
+   "tempo": 0.8,
+   "offensive": false,
+   "lances": 0.5,
+   "weight": 6,
+   "enemy": "border"
+  },
+  "security": {
+   "label": "Security Duty",
+   "months": [
+    3,
+    9
+   ],
+   "pay": 1.2,
+   "tempo": 1.2,
+   "offensive": false,
+   "lances": 1.0,
+   "weight": 10,
+   "enemy": "border"
+  },
+  "riot": {
+   "label": "Riot Duty",
+   "months": [
+    3,
+    6
+   ],
+   "pay": 1.0,
+   "tempo": 1.0,
+   "offensive": false,
+   "lances": 0.5,
+   "weight": 4,
+   "enemy": "rebels"
+  },
+  "planetary_assault": {
+   "label": "Planetary Assault",
+   "months": [
+    6,
+    12
+   ],
+   "pay": 1.5,
+   "tempo": 1.5,
+   "offensive": true,
+   "lances": 1.5,
+   "weight": 8,
+   "enemy": "target"
+  },
+  "relief": {
+   "label": "Relief Duty",
+   "months": [
+    6,
+    12
+   ],
+   "pay": 1.4,
+   "tempo": 1.4,
+   "offensive": false,
+   "lances": 1.25,
+   "weight": 6,
+   "enemy": "border"
+  },
+  "guerrilla": {
+   "label": "Guerrilla Warfare",
+   "months": [
+    12,
+    24
+   ],
+   "pay": 2.1,
+   "tempo": 2.1,
+   "offensive": true,
+   "lances": 1.0,
+   "weight": 4,
+   "enemy": "target"
+  },
+  "pirate_hunting": {
+   "label": "Pirate Hunting",
+   "months": [
+    3,
+    9
+   ],
+   "pay": 1.0,
+   "tempo": 1.0,
+   "offensive": false,
+   "lances": 1.0,
+   "weight": 10,
+   "enemy": "pirates"
+  },
+  "diversionary_raid": {
+   "label": "Diversionary Raid",
+   "months": [
+    2,
+    3
+   ],
+   "pay": 1.8,
+   "tempo": 1.8,
+   "offensive": true,
+   "lances": 1.0,
+   "weight": 7,
+   "enemy": "target"
+  },
+  "objective_raid": {
+   "label": "Objective Raid",
+   "months": [
+    2,
+    3
+   ],
+   "pay": 1.6,
+   "tempo": 1.6,
+   "offensive": true,
+   "lances": 1.0,
+   "weight": 8,
+   "enemy": "target"
+  },
+  "recon_raid": {
+   "label": "Recon Raid",
+   "months": [
+    2,
+    3
+   ],
+   "pay": 1.6,
+   "tempo": 1.6,
+   "offensive": true,
+   "lances": 0.75,
+   "weight": 7,
+   "enemy": "target"
+  },
+  "extraction_raid": {
+   "label": "Extraction Raid",
+   "months": [
+    2,
+    3
+   ],
+   "pay": 1.6,
+   "tempo": 1.6,
+   "offensive": true,
+   "lances": 1.0,
+   "weight": 5,
+   "enemy": "target"
+  }
+ },
+ "pay": {
+  "_approx": "monthly base pay from the company's value",
+  "pct_of_unit_value": 0.014,
+  "salary_mult": 2.0,
+  "min_monthly": 120000,
+  "rating_mult": {
+   "A*": 1.5,
+   "A": 1.3,
+   "B": 1.15,
+   "C": 1.0,
+   "D": 0.85,
+   "F": 0.7
+  },
+  "employer_mult": {
+   "MAJOR": 1.1,
+   "PERIPHERY": 0.85,
+   "MINOR": 0.9,
+   "DEFAULT": 1.0
+  }
+ },
+ "terms": {
+  "command": [
+   "Integrated",
+   "House",
+   "Liaison",
+   "Independent"
+  ],
+  "salvage_steps": [
+   0,
+   10,
+   20,
+   30,
+   40,
+   50,
+   60,
+   70
+  ],
+  "support_steps": [
+   0,
+   10,
+   20,
+   30,
+   40,
+   50,
+   60,
+   70,
+   80,
+   90,
+   100
+  ],
+  "transport_steps": [
+   0,
+   25,
+   50,
+   75,
+   100
+  ],
+  "advance_steps": [
+   0,
+   10,
+   20,
+   30,
+   40,
+   50
+  ],
+  "signing_steps": [
+   0,
+   2,
+   4,
+   6,
+   8,
+   10
+  ],
+  "negotiate_tn": 9,
+  "command_tempo": {
+   "Integrated": 1.15,
+   "House": 1.05,
+   "Liaison": 1.0,
+   "Independent": 0.85
+  },
+  "decline_score": {
+   "Liaison": -1,
+   "Independent": 0
+  },
+  "_note": "Offers with generous salvage/support/transport pay a little less (applied when the offer is made). A successful negotiation only improves the clause. Command rights: Integrated/House bring allies and more battles; Liaison/Independent let you decline battles."
+ },
+ "operations": {
+  "roles": {
+   "fight": {
+    "label": "Fight",
+    "chance": 0.3
+   },
+   "defend": {
+    "label": "Defend",
+    "chance": 0.18
+   },
+   "scout": {
+    "label": "Scout",
+    "chance": 0.24
+   },
+   "training": {
+    "label": "Training",
+    "chance": 0.06
+   },
+   "reserve": {
+    "label": "Reserve",
+    "chance": 0.0
+   }
+  },
+  "role_scenarios": {
+   "fight": [
+    [
+     "standup",
+     4
+    ],
+    [
+     "breakthrough",
+     2
+    ],
+    [
+     "base_attack",
+     2
+    ],
+    [
+     "chase",
+     1
+    ],
+    [
+     "ambush",
+     1
+    ]
+   ],
+   "defend": [
+    [
+     "base_defense",
+     4
+    ],
+    [
+     "hold_the_line",
+     3
+    ],
+    [
+     "standup",
+     2
+    ],
+    [
+     "chase",
+     1
+    ]
+   ],
+   "scout": [
+    [
+     "recon",
+     4
+    ],
+    [
+     "probe",
+     2
+    ],
+    [
+     "chase",
+     2
+    ],
+    [
+     "ambush",
+     1
+    ],
+    [
+     "standup",
+     1
+    ]
+   ],
+   "training": [
+    [
+     "standup",
+     1
+    ]
+   ]
+  },
+  "scenarios": {
+   "standup": {
+    "label": "Standup Fight",
+    "desc": "Meet the enemy head on. Destroy or drive off their force.",
+    "enemy_bv": 1.0,
+    "time_limit": 900
+   },
+   "breakthrough": {
+    "label": "Breakthrough",
+    "desc": "Punch through the enemy line: get at least half your force off the far edge.",
+    "enemy_bv": 0.9,
+    "time_limit": 900
+   },
+   "base_attack": {
+    "label": "Base Attack",
+    "desc": "Destroy the marked enemy buildings.",
+    "enemy_bv": 1.0,
+    "time_limit": 900
+   },
+   "base_defense": {
+    "label": "Base Defense",
+    "desc": "Keep the marked buildings standing until the enemy is beaten or time runs out.",
+    "enemy_bv": 1.1,
+    "time_limit": 720
+   },
+   "hold_the_line": {
+    "label": "Hold the Line",
+    "desc": "Hold the compound against a larger force until time runs out.",
+    "enemy_bv": 1.25,
+    "time_limit": 600
+   },
+   "chase": {
+    "label": "Chase",
+    "desc": "The enemy is running for your edge of the map. Don't let half of them escape.",
+    "enemy_bv": 0.9,
+    "time_limit": 720
+   },
+   "recon": {
+    "label": "Recon",
+    "desc": "Get a unit near each of the three marked points, then pull out.",
+    "enemy_bv": 0.8,
+    "time_limit": 900
+   },
+   "probe": {
+    "label": "Probe",
+    "desc": "Scout the marked points and test the enemy's strength.",
+    "enemy_bv": 0.9,
+    "time_limit": 900
+   },
+   "ambush": {
+    "label": "Ambush",
+    "desc": "You caught the enemy in the open, close in. Finish them.",
+    "enemy_bv": 1.1,
+    "time_limit": 720
+   },
+   "major_battle": {
+    "label": "Major Battle",
+    "desc": "A full engagement: bring every lance you can.",
+    "enemy_bv": 1.0,
+    "time_limit": 1200
+   }
+  },
+  "deadline_days": [
+   2,
+   6
+  ],
+  "missed_score": -2,
+  "score_victory": 1,
+  "score_objective": 2,
+  "score_defeat": -1,
+  "score_draw": 0,
+  "enemy_skill": {
+   "green": [
+    5,
+    6
+   ],
+   "regular": [
+    4,
+    5
+   ],
+   "veteran": [
+    3,
+    4
+   ],
+   "elite": [
+    2,
+    3
+   ]
+  },
+  "enemy_skill_weights": {
+   "green": 2,
+   "regular": 5,
+   "veteran": 2,
+   "elite": 1
+  },
+  "ally_chance": {
+   "Integrated": 0.6,
+   "House": 0.4,
+   "Liaison": 0.15,
+   "Independent": 0.0
+  },
+  "major_battle_missions": [
+   "planetary_assault",
+   "relief",
+   "guerrilla"
+  ],
+  "mech_share": {
+   "DEFAULT": 0.6,
+   "PERIPHERY": 0.45,
+   "PIRATE": 0.4
+  },
+  "vtol_share": 0.12,
+  "infantry": {
+   "bv_share": 0.12,
+   "max_units": 4,
+   "ba_from_year": 3052,
+   "ba_chance": 0.35,
+   "enemy_chance": {
+    "standup": 0.35,
+    "breakthrough": 0.5,
+    "base_attack": 1.0,
+    "base_defense": 0.5,
+    "hold_the_line": 0.5,
+    "chase": 0.0,
+    "recon": 0.3,
+    "probe": 0.3,
+    "ambush": 0.4,
+    "major_battle": 0.8
+   },
+   "garrison_scenarios": [
+    "base_defense",
+    "hold_the_line"
+   ],
+   "garrison_chance": 0.7,
+   "garrison_bv": [
+    120,
+    320
+   ],
+   "wounded_return": 0.4
+  },
+  "support": {
+   "player": {
+    "Integrated": {
+     "artillery": 2,
+     "air_strike": 1
+    },
+    "House": {
+     "artillery": 1,
+     "air_strike": 1
+    },
+    "Liaison": {
+     "artillery": 1,
+     "air_strike": 0
+    },
+    "Independent": {
+     "artillery": 0,
+     "air_strike": 0
+    }
+   },
+   "major_battle_bonus": {
+    "artillery": 1,
+    "air_strike": 1
+   },
+   "enemy_chance": {
+    "base_attack": 0.5,
+    "major_battle": 0.6,
+    "hold_the_line": 0.35,
+    "base_defense": 0.35,
+    "breakthrough": 0.25
+   },
+   "enemy_kinds": {
+    "PIRATE": [],
+    "CLAN": [
+     "air_strike"
+    ],
+    "MERC": [
+     "artillery"
+    ],
+    "DEFAULT": [
+     "artillery",
+     "air_strike"
+    ]
+   },
+   "enemy_first_s": 45.0,
+   "enemy_gap_s": 60.0,
+   "player_scenarios": [
+    "standup",
+    "breakthrough",
+    "base_attack",
+    "base_defense",
+    "hold_the_line",
+    "major_battle"
+   ],
+   "enemy_max": {
+    "artillery": 2,
+    "air_strike": 1
+   }
+  }
+ },
+ "rating": {
+  "thresholds": [
+   [
+    50,
+    "A*"
+   ],
+   [
+    40,
+    "A"
+   ],
+   [
+    25,
+    "B"
+   ],
+   [
+    15,
+    "C"
+   ],
+   [
+    5,
+    "D"
+   ],
+   [
+    -999,
+    "F"
+   ]
+  ]
+ },
+ "bank": {
+  "rate_by_rating": {
+   "A*": 0.08,
+   "A": 0.1,
+   "B": 0.12,
+   "C": 0.15,
+   "D": 0.2,
+   "F": 0.28
+  },
+  "max_by_rating": {
+   "A*": 40000000,
+   "A": 25000000,
+   "B": 15000000,
+   "C": 8000000,
+   "D": 4000000,
+   "F": 2000000
+  },
+  "terms_months": [
+   12,
+   24,
+   36
+  ],
+  "fold_debt": 5000000
+ },
+ "difficulty": {
+  "_note": "Enemy strength as a share of yours (after skill). AtB-style OpFor sizing.",
+  "Green": 0.65,
+  "Regular": 0.8,
+  "Veteran": 0.95,
+  "Elite": 1.1,
+  "default": "Regular"
+ },
+ "solaris": {
+  "_note": "Arena duels for a mercenary company on Solaris VII between contracts. Purse is per class, times the arena's prestige; walk-ons earn far less than the stables.",
+  "offers": 5,
+  "purse": {
+   "light": 45000,
+   "medium": 75000,
+   "heavy": 115000,
+   "assault": 165000
+  },
+  "winner_share": 0.75,
+  "skill_shift": {
+   "Green": -1,
+   "Regular": 0,
+   "Veteran": 0,
+   "Elite": 1
+  }
+ },
+ "timeline": {
+  "_note": "The canon timeline in the mercenary game (events in data/era_events.json). war_pay: contract pay when the employer is at war with the enemy named; war_weight: how much likelier a faction at war on its border is to offer work; front_lines: lines in the monthly report of worlds changing hands; news_kept: news items kept in the save.",
+  "war_pay": 1.1,
+  "war_weight": 1.5,
+  "front_lines": 6,
+  "news_kept": 240
+ }
+}

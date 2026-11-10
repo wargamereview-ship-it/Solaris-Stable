@@ -1,0 +1,17 @@
+# Godot's import cache and editor state (rebuilt on first open)
+.godot/
+*.translation
+export_presets.cfg
+
+# Full text of the owner's rulebooks: personal use only, never uploaded.
+# tools/data_import/crosscheck.py needs them; see reference/README.md.
+reference/text/
+*.pdf
+
+# Scratch files
+tests/_tmp_*
+tests/_dbg_*
+__pycache__/
+*.pyc
+*.log
+.claude/

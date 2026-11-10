@@ -1,0 +1,137 @@
+{
+ "eras": [
+  {
+   "id": 1,
+   "name": "Age of War",
+   "end": 2570
+  },
+  {
+   "id": 2,
+   "name": "Star League",
+   "end": 2780
+  },
+  {
+   "id": 3,
+   "name": "Early Succession War",
+   "end": 2900
+  },
+  {
+   "id": 4,
+   "name": "Clan Invasion",
+   "end": 3061
+  },
+  {
+   "id": 5,
+   "name": "Jihad",
+   "end": 3080
+  },
+  {
+   "id": 6,
+   "name": "Early Republic",
+   "end": 3100
+  },
+  {
+   "id": 7,
+   "name": "Dark Age",
+   "end": 3150
+  },
+  {
+   "id": 8,
+   "name": "Civil War",
+   "end": 3067
+  },
+  {
+   "id": 10,
+   "name": "Late Republic",
+   "end": 3130
+  },
+  {
+   "id": 11,
+   "name": "Late Succession War \u2013 LosTech",
+   "end": 3019
+  },
+  {
+   "id": 12,
+   "name": "Late Succession War \u2013 Renaissance",
+   "end": 3049
+  },
+  {
+   "id": 13,
+   "name": "ilClan",
+   "end": 3153
+  }
+ ],
+ "factions": {
+  "1": "Clan Burrock",
+  "2": "Clan Blood Spirit",
+  "5": "Capellan Confederation",
+  "6": "Clan Cloud Cobra",
+  "7": "Clan Coyote",
+  "8": "Clan Diamond Shark",
+  "9": "Circinus Federation",
+  "10": "Clan Fire Mandrill",
+  "11": "Clan Ghost Bear",
+  "12": "Clan Goliath Scorpion",
+  "13": "Clan Hell's Horses",
+  "14": "Clan Ice Hellion",
+  "15": "Clan Jade Falcon",
+  "16": "Clan Mongoose",
+  "17": "Clan Nova Cat",
+  "18": "ComStar",
+  "19": "Clan Star Adder",
+  "20": "Clan Smoke Jaguar",
+  "21": "Clan Snow Raven",
+  "22": "Clan Steel Viper",
+  "23": "Clan Wolf (in Exile)",
+  "24": "Clan Wolf",
+  "25": "Clan Widowmaker",
+  "26": "Clan Wolverine",
+  "27": "Draconis Combine",
+  "28": "Free Rasalhague Republic",
+  "29": "Federated Suns",
+  "30": "Free Worlds League",
+  "31": "Kell Hounds",
+  "32": "Lyran Alliance",
+  "33": "Magistracy of Canopus",
+  "34": "Mercenary",
+  "35": "Marian Hegemony",
+  "36": "Outworlds Alliance",
+  "37": "Pirates",
+  "38": "Raven Alliance",
+  "39": "Rasalhague Dominion",
+  "40": "Republic of the Sphere",
+  "41": "Rim Worlds Republic",
+  "43": "Solaris 7",
+  "44": "Star League (First)",
+  "45": "Star League (Second)",
+  "46": "Taurian Concordat",
+  "47": "Word of Blake",
+  "48": "Wolf's Dragoons",
+  "53": "Duchy of Andurien (FWL)",
+  "54": "Lyran Commonwealth",
+  "55": "Oriente Protectorate (FWL)",
+  "56": "Regulan Fiefs (FWL)",
+  "57": "Marik-Stewart Commonwealth (FWL)",
+  "58": "Duchy of Tamarind-Abbey (FWL)",
+  "59": "Rim Commonality (FWL)",
+  "60": "Filtvelt Coalition",
+  "61": "Calderon Protectorate",
+  "62": "Clan Stone Lion",
+  "63": "Clan Sea Fox",
+  "64": "St. Ives Compact",
+  "65": "Federated Commonwealth",
+  "67": "Society",
+  "68": "Terran Hegemony",
+  "70": "Non-Aligned Worlds (FWL)",
+  "73": "Scorpion Empire",
+  "74": "Star League in Exile",
+  "75": "Fronc Reaches",
+  "76": "ilClan Wolf",
+  "79": "Clan Protectorate",
+  "80": "Wolf Empire",
+  "81": "Alyina Mercantile League",
+  "82": "Tamar Pact",
+  "83": "Vesper Marches",
+  "190": "Jade Falcon Remnant"
+ }
+}

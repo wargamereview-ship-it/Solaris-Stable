@@ -1,0 +1,1201 @@
+{
+ "_note": "The timeline for both game modes. Dates were checked against the Sarna.net year pages and MegaMek's war and planet-ownership data; \"approx\": true marks an event whose day (or month) the sources leave open, and \"fiction\": true one invented for the game. Fields: date (YYYY-MM-DD), title, text, solaris (a line added in the stable game), only (\"stable\" or \"merc\"), major (the mercenary game stops for it), war_start / war_end (names of wars in data/game/merc_factions.json this event announces, so the automatic war news stays silent), stable (effects in the stable game: weeks, price_mult, purse_mult, tension, jobs [chance, pay], draft, free_agent_boost, clan_salvage), merc (effects in the mercenary game for `days`: pay, offers, price, recruits as multipliers, supply as a procurement modifier, employers {faction: weight}, note). Tech arrival is automatic from item dates.",
+ "events": [
+  {
+   "date": "3015-01-01",
+   "title": "A new season on the Game World",
+   "text": "The Third Succession War grinds on along every border, but on Solaris VII the arenas are full. Lostech is scarce: XL engines, double heat sinks and Gauss rifles exist only in rumor.",
+   "only": "stable"
+  },
+  {
+   "date": "3015-05-15",
+   "title": "Anton Marik's revolt collapses",
+   "text": "Duke Anton Marik had Wolf's Dragoons hostages shot in March. The Dragoons turned on him, the Black Widow Company stormed his manor on New Delos, and the Marik civil war is over. Janos Marik keeps the Captain-General's chair and hires the Dragoons himself.",
+   "approx": true,
+   "war_end": [
+    "Marik Civil War"
+   ],
+   "merc": {
+    "days": 240,
+    "employers": {
+     "FWL": 1.5
+    },
+    "note": "The League is rebuilding the regiments it lost: more Marik contracts."
+   }
+  },
+  {
+   "date": "3020-03-05",
+   "title": "Marik raid on Solaris VII",
+   "text": "The Thirty-third Marik Militia and Seguin's Strikers come down on Solaris. Lyran regulars and Hansen's Roughriders throw them back off-world.",
+   "approx": true,
+   "solaris": "Shipping is held at the jump points for weeks and parts prices climb.",
+   "stable": {
+    "weeks": 20,
+    "price_mult": 1.12
+   }
+  },
+  {
+   "date": "3020-09-01",
+   "title": "Katrina Steiner's peace proposal",
+   "text": "The Archon sends a peace proposal to every Great House. Only Hanse Davion of the Federated Suns answers.",
+   "approx": true
+  },
+  {
+   "date": "3022-06-01",
+   "title": "A Davion-Steiner alliance",
+   "text": "Hanse Davion and Katrina Steiner put their names to an alliance between the Federated Suns and the Lyran Commonwealth. Liao, Kurita and Marik answer with a pact of their own, the Concord of Kapteyn.",
+   "solaris": "Silesia and Black Hills fans share a bar for once. Cathay and Kobe do not.",
+   "stable": {
+    "weeks": 26,
+    "tension": 1.1
+   }
+  },
+  {
+   "date": "3023-02-01",
+   "title": "Wolf's Dragoons sign with the Dragon",
+   "text": "After three years in Steiner pay, the best-known mercenaries in the Inner Sphere take a contract with the Draconis Combine.",
+   "approx": true,
+   "only": "merc"
+  },
+  {
+   "date": "3023-05-01",
+   "title": "Hatchets on the factory floor",
+   "text": "Defiance Industries of Hesperus II fields the Hatchetman, a 'Mech built around a hatchet the size of a truck. Brawlers across the Game World want one.",
+   "approx": true
+  },
+  {
+   "date": "3024-06-01",
+   "title": "The Gray Death Legion",
+   "text": "A new mercenary command is raised on Trellwan by Grayson Carlyle, out of a wrecked garrison lance and local recruits.",
+   "approx": true,
+   "only": "merc"
+  },
+  {
+   "date": "3025-07-25",
+   "title": "Bigger purses",
+   "text": "Holovid deals across the Inner Sphere drive up Solaris purses as broadcasters chase ratings.",
+   "only": "stable",
+   "fiction": true,
+   "stable": {
+    "weeks": 9999,
+    "purse_mult": 1.1
+   }
+  },
+  {
+   "date": "3025-12-28",
+   "title": "The Third Succession War gutters out",
+   "text": "After a century and a half nobody signs a peace. The Houses simply run out of regiments to spend, and the raids along the borders thin out.",
+   "approx": true,
+   "war_end": [
+    "Third Succession War"
+   ]
+  },
+  {
+   "date": "3027-05-26",
+   "title": "Xiang's season",
+   "text": "Justin Xiang, a Davion officer exiled for treason in January, has made the Capellan sector's season on Solaris: Peter Armstrong dead in March, Billy Wolfson in April, and now Philip Capet.",
+   "only": "stable",
+   "solaris": "Cathay packs every arena he fights in. Black Hills wants his head.",
+   "stable": {
+    "weeks": 30,
+    "tension": 1.15
+   }
+  },
+  {
+   "date": "3028-08-20",
+   "title": "The Fourth Succession War",
+   "text": "Hanse Davion marries Melissa Steiner on Terra and gives his bride the Capellan Confederation. Davion regiments had jumped the day before; the Lyrans strike the Draconis Combine the day after.",
+   "major": true,
+   "war_start": [
+    "Fourth Succession War"
+   ],
+   "solaris": "Solaris City's sectors seethe. Cathay and Kobe crowds jeer every Davion or Steiner fighter, parts go to the front first, and some warriors are recalled to their units.",
+   "stable": {
+    "weeks": 74,
+    "price_mult": 1.25,
+    "tension": 1.3,
+    "jobs": [
+     1.6,
+     1.25
+    ],
+    "draft": {
+     "houses": [
+      "Federated Suns",
+      "Lyran Commonwealth",
+      "Capellan Confederation",
+      "Draconis Combine"
+     ],
+     "chance": 0.08,
+     "weeks": 40
+    }
+   },
+   "merc": {
+    "days": 520,
+    "pay": 1.25,
+    "offers": 1.3,
+    "price": 1.2,
+    "supply": 1,
+    "employers": {
+     "FS": 2.0,
+     "LA": 2.0,
+     "CC": 1.6,
+     "DC": 1.3
+    },
+    "note": "Every House is hiring. Pay is up a quarter, and so is the price of everything a 'Mech needs."
+   }
+  },
+  {
+   "date": "3028-10-01",
+   "title": "Operation Dagger",
+   "text": "The Free Worlds League joins the war against the Commonwealth and takes Milton, Phecda and Wyatt.",
+   "solaris": "Lyran regiments shift to meet it; the Tenth Skye Rangers stay to guard Solaris.",
+   "stable": {
+    "weeks": 12,
+    "price_mult": 1.08
+   },
+   "merc": {
+    "days": 150,
+    "employers": {
+     "FWL": 1.5
+    }
+   }
+  },
+  {
+   "date": "3028-10-05",
+   "title": "A Star League memory core",
+   "text": "The Gray Death Legion, a mercenary regiment, finds an intact Star League library on Helm. Engineers whisper about XL engines, endo steel and double heat sinks coming back within a decade.",
+   "approx": true
+  },
+  {
+   "date": "3029-06-01",
+   "title": "ComStar interdicts the Federated Suns",
+   "text": "ComStar blames House Davion for the destruction of the HPG on Sarna and cuts every Davion world off from the net. No messages in, none out.",
+   "merc": {
+    "days": 189,
+    "employers": {
+     "FS": 0.5
+    },
+    "note": "Davion contracts are hard to arrange with the HPGs dark."
+   }
+  },
+  {
+   "date": "3029-08-20",
+   "title": "Death to Mercenaries",
+   "text": "Wolf's Dragoons have bled the Combine white on Crossing, and Coordinator Takashi Kurita has had enough of hired soldiers: captured mercenaries are to be executed, and the Dragon will hire no more.",
+   "approx": true,
+   "only": "merc",
+   "major": true,
+   "merc": {
+    "days": 3525,
+    "employers": {
+     "DC": 0.12
+    },
+    "note": "The Draconis Combine all but stops hiring mercenaries."
+   }
+  },
+  {
+   "date": "3029-12-07",
+   "title": "The interdiction is lifted",
+   "text": "Hanse Davion lets the Com Guards garrison ComStar's HPG compounds on his worlds. The net comes back.",
+   "only": "merc"
+  },
+  {
+   "date": "3030-01-20",
+   "title": "The guns fall quiet",
+   "text": "The Fourth Succession War ends. The Capellan Confederation has lost half its worlds, the Tikonov and Sarna commonalities among them, and the St. Ives Compact has gone its own way.",
+   "approx": true,
+   "major": true,
+   "war_end": [
+    "Fourth Succession War"
+   ],
+   "solaris": "Veterans flood back to Solaris looking for work, and the free agent pool swells.",
+   "stable": {
+    "free_agent_boost": 8
+   },
+   "merc": {
+    "days": 300,
+    "recruits": 1.5,
+    "offers": 0.85,
+    "note": "Discharged veterans crowd the hiring halls; garrison work replaces assault contracts."
+   }
+  },
+  {
+   "date": "3030-08-16",
+   "title": "Outreach goes to the Dragoons",
+   "text": "Hanse Davion grants Wolf's Dragoons the world of Outreach, an old Star League training ground a few jumps from Terra. By the end of the year they open a hiring hall there.",
+   "only": "merc"
+  },
+  {
+   "date": "3030-09-10",
+   "title": "Andurien secedes",
+   "text": "The Duchy of Andurien leaves the Free Worlds League and, with the Magistracy of Canopus, invades what is left of the Capellan Confederation.",
+   "approx": true,
+   "war_start": [
+    "Fourth Andurien War"
+   ],
+   "merc": {
+    "days": 1700,
+    "employers": {
+     "CC": 1.8,
+     "MOC": 1.5,
+     "DA": 1.5
+    },
+    "note": "Sian needs regiments it does not have."
+   }
+  },
+  {
+   "date": "3034-03-13",
+   "title": "The Free Rasalhague Republic",
+   "text": "Rasalhague declares its independence. ComStar and the Draconis Combine recognise it, and the Lyran Commonwealth, reluctantly, hands over its share of the old district.",
+   "major": true
+  },
+  {
+   "date": "3034-05-23",
+   "title": "The Ronin War",
+   "text": "Kurita hardliners who will not give up Rasalhague attack the new republic. The Republic's hired regiments do badly, and it is the KungsArmé and loyal Combine troops who break the ronin by the end of June.",
+   "war_start": [
+    "Ronin War"
+   ],
+   "war_end": [
+    "Ronin War"
+   ],
+   "merc": {
+    "days": 60,
+    "employers": {
+     "FRR": 4.0
+    },
+    "pay": 1.1
+   }
+  },
+  {
+   "date": "3035-01-05",
+   "title": "Lostech renaissance",
+   "text": "The first rebuilt Star League technologies roll off assembly lines. XL engines and endo steel reach the markets at a premium.",
+   "approx": true
+  },
+  {
+   "date": "3035-06-01",
+   "title": "A bomb on Marik",
+   "text": "A bomb in the Marik palace kills Captain-General Janos Marik and his heir. Thomas Marik is pulled from the wreckage; Duncan Marik takes the chair and the war against Andurien.",
+   "merc": {
+    "days": 400,
+    "employers": {
+     "FWL": 1.4
+    }
+   }
+  },
+  {
+   "date": "3036-05-12",
+   "title": "Romano Liao takes the Celestial Throne",
+   "text": "Maximilian Liao is dead, a suicide by all accounts. His daughter Romano is the thirtieth Chancellor, and the purges begin with the Maskirovka."
+  },
+  {
+   "date": "3039-04-15",
+   "title": "The War of 3039",
+   "text": "The Federated Commonwealth invades the Draconis Combine. It expects a broken enemy. It finds Theodore Kurita's rebuilt regiments, armed with Star League equipment nobody knew they had.",
+   "major": true,
+   "war_start": [
+    "War of 3039"
+   ],
+   "solaris": "Kobe and Black Hills crowds turn on each other, and parts prices jump again.",
+   "stable": {
+    "weeks": 39,
+    "price_mult": 1.18,
+    "tension": 1.2,
+    "jobs": [
+     1.5,
+     1.2
+    ],
+    "draft": {
+     "houses": [
+      "Federated Suns",
+      "Lyran Commonwealth",
+      "Draconis Combine"
+     ],
+     "chance": 0.06,
+     "weeks": 30
+    }
+   },
+   "merc": {
+    "days": 271,
+    "pay": 1.2,
+    "offers": 1.2,
+    "price": 1.15,
+    "employers": {
+     "FS": 1.8,
+     "LA": 1.8
+    },
+    "note": "Davion and Steiner pay war rates. Theodore Kurita hires too, quietly, through Le Blanc."
+   }
+  },
+  {
+   "date": "3039-04-16",
+   "title": "The Dragon's quiet recruiters",
+   "text": "The Coordinator's order stands, but his son needs soldiers. The Combine's recruiters work through front companies and the Le Blanc hall.",
+   "only": "merc",
+   "merc": {
+    "days": 5630,
+    "employers": {
+     "DC": 0.5
+    }
+   }
+  },
+  {
+   "date": "3040-01-11",
+   "title": "The War of 3039 ends",
+   "text": "The Federated Commonwealth pulls back with a handful of worlds to show for it. The Combine calls it a victory, and for once nobody argues.",
+   "war_end": [
+    "War of 3039"
+   ]
+  },
+  {
+   "date": "3040-01-18",
+   "title": "The Federated Commonwealth",
+   "text": "The Lyran Commonwealth and the Federated Suns begin to merge their armies and their governments. The star maps now show one realm from Tharkad to New Avalon.",
+   "approx": true,
+   "solaris": "Solaris VII is a Federated Commonwealth world."
+  },
+  {
+   "date": "3040-03-08",
+   "title": "Gauss rifles return",
+   "text": "The Free Worlds League puts the Gauss rifle back into production. The first Gauss-armed duelists on Solaris draw enormous crowds.",
+   "approx": true
+  },
+  {
+   "date": "3049-08-15",
+   "title": "Silence in the Periphery",
+   "text": "The bandit kingdoms beyond the Lyran border have gone quiet. Ships sent to look do not come back; the Kell Hounds lose Phelan Kell, their colonel's son, at a pirate base called The Rock.",
+   "approx": true,
+   "war_start": [
+    "Clan Invasion"
+   ]
+  },
+  {
+   "date": "3050-03-07",
+   "title": "Invaders from the Periphery",
+   "text": "Four armies calling themselves the Clans smash into the Inner Sphere: Wolves, Jade Falcons, Ghost Bears and Smoke Jaguars. Their 'Mechs out-range and out-run everything, and world after world in the Commonwealth, Rasalhague and the Combine falls in days.",
+   "approx": true,
+   "major": true,
+   "solaris": "Clan salvage starts to appear on the Solaris black market, and warriors are called home.",
+   "stable": {
+    "weeks": 115,
+    "price_mult": 1.3,
+    "clan_salvage": true,
+    "jobs": [
+     1.6,
+     1.3
+    ],
+    "draft": {
+     "houses": [
+      "Lyran Commonwealth",
+      "Draconis Combine"
+     ],
+     "chance": 0.08,
+     "weeks": 52
+    }
+   },
+   "merc": {
+    "days": 805,
+    "pay": 1.3,
+    "offers": 1.25,
+    "price": 1.3,
+    "supply": 1,
+    "employers": {
+     "FC": 2.0,
+     "LA": 2.0,
+     "FRR": 3.0,
+     "DC": 1.5
+    },
+    "note": "Anyone who will stand in front of the Clans can name a price. Parts go to the line regiments first."
+   }
+  },
+  {
+   "date": "3050-10-31",
+   "title": "Radstadt",
+   "text": "Over Radstadt a Rasalhague pilot, Tyra Miraborg, flies her crippled fighter into the bridge of the Clan flagship. The Clans' war leader is dead, and their armies stop where they stand to choose another."
+  },
+  {
+   "date": "3051-01-15",
+   "title": "The Outreach conference",
+   "text": "Jaime Wolf calls the lords of the Great Houses to Outreach and tells them what the Dragoons have hidden for forty-five years: they came from the Clans, and they know how the Clans fight. The heirs of five Houses start training together.",
+   "approx": true
+  },
+  {
+   "date": "3051-11-01",
+   "title": "The Clans return",
+   "text": "A new ilKhan, Ulric Kerensky of the Wolves, and two more Clans in the line. The invasion starts again.",
+   "approx": true
+  },
+  {
+   "date": "3052-01-05",
+   "title": "Luthien holds",
+   "text": "The Smoke Jaguars and Nova Cats drop on the Combine's capital and are thrown back. Beside the Dragon's own regiments stand the Kell Hounds and Wolf's Dragoons, sent by Hanse Davion.",
+   "merc": {
+    "days": 500,
+    "employers": {
+     "DC": 1.6
+    },
+    "note": "Mercenaries saved Luthien. The Combine's doors open a little wider."
+   }
+  },
+  {
+   "date": "3052-05-21",
+   "title": "Tukayyid",
+   "text": "For three weeks ComStar's Com Guards fight seven Clans on Tukayyid, and win. The Clans are bound to a truce: no advance past Tukayyid for fifteen years.",
+   "major": true,
+   "war_end": [
+    "Clan Invasion"
+   ]
+  },
+  {
+   "date": "3052-06-06",
+   "title": "Schism in ComStar",
+   "text": "ComStar's attempt to seize the Inner Sphere's HPGs while the armies were away has failed, and its Primus is dead. The reformers keep ComStar; the believers leave for the Free Worlds League and call themselves the Word of Blake."
+  },
+  {
+   "date": "3052-06-17",
+   "title": "Hanse Davion is dead",
+   "text": "The Fox dies at his desk on New Avalon. His son Victor, who fought the Clans on the line, inherits a realm of a thousand worlds.",
+   "solaris": "Black Hills wears mourning bands for a month."
+  },
+  {
+   "date": "3052-09-01",
+   "title": "The Mercenary Review and Bonding Commission",
+   "text": "ComStar's old Mercenary Review Board has collapsed with ComStar's good name. A new commission sits on Outreach, run by mercenaries and the Houses that hire them: it rates commands, holds bonds and hears disputes.",
+   "approx": true,
+   "only": "merc"
+  },
+  {
+   "date": "3054-09-15",
+   "title": "Takashi Kurita is dead",
+   "text": "The Coordinator dies by his own hand. Theodore Kurita rules the Draconis Combine, and the order against mercenaries dies with his father.",
+   "merc": {
+    "days": 730,
+    "employers": {
+     "DC": 1.5
+    },
+    "note": "The Combine hires openly again."
+   }
+  },
+  {
+   "date": "3055-06-19",
+   "title": "The Archon is murdered",
+   "text": "A bomb hidden in a flower arrangement kills Melissa Steiner-Davion on Tharkad. Nobody is charged. The Lyran half of the Federated Commonwealth starts to look at its Davion prince differently.",
+   "solaris": "Silesia and Black Hills stop drinking together.",
+   "stable": {
+    "weeks": 40,
+    "tension": 1.12
+   }
+  },
+  {
+   "date": "3056-04-20",
+   "title": "Murder on Solaris",
+   "text": "Duke Ryan Steiner, voice of the Skye separatists and a power behind several Solaris stables, is shot dead by a sniper in his Solaris City residence.",
+   "approx": true,
+   "only": "stable",
+   "solaris": "His stables change hands overnight. The bookmakers stop taking bets for a week.",
+   "stable": {
+    "weeks": 26,
+    "tension": 1.15
+   }
+  },
+  {
+   "date": "3057-09-18",
+   "title": "The Commonwealth splits",
+   "text": "On the sixteenth, Marik and Liao regiments invade the Sarna March to take back what was lost in the Fourth War. Two days later Katherine Steiner pulls the Lyran half out of the Federated Commonwealth and calls it the Lyran Alliance.",
+   "major": true,
+   "war_start": [
+    "War of 3057"
+   ],
+   "solaris": "Solaris VII is Lyran again. Silesia and Black Hills fans trade insults, then bottles.",
+   "stable": {
+    "weeks": 60,
+    "tension": 1.15,
+    "jobs": [
+     1.4,
+     1.15
+    ]
+   },
+   "merc": {
+    "days": 120,
+    "pay": 1.15,
+    "offers": 1.2,
+    "employers": {
+     "CC": 1.6,
+     "FWL": 1.5,
+     "FC": 1.5,
+     "FS": 1.5
+    }
+   }
+  },
+  {
+   "date": "3057-12-15",
+   "title": "The Chaos March",
+   "text": "The invasion stops, and so does the Federated Commonwealth's rule over the worlds around Terra. Dozens of them now answer to nobody: little alliances, warlords, and whoever can pay for a garrison.",
+   "war_end": [
+    "War of 3057"
+   ],
+   "merc": {
+    "days": 1100,
+    "offers": 1.2,
+    "note": "Small states with money and no army: steady work, poor terms."
+   }
+  },
+  {
+   "date": "3057-12-20",
+   "title": "The Refusal War",
+   "text": "Clan Wolf and Clan Jade Falcon have fought each other to ruin over the truce. Natasha Kerensky is dead on Twycross, and part of Clan Wolf has gone into exile around Arc-Royal, under the Kell Hounds' wing.",
+   "approx": true,
+   "war_start": [
+    "Refusal War"
+   ],
+   "war_end": [
+    "Refusal War"
+   ]
+  },
+  {
+   "date": "3058-02-28",
+   "title": "Terra falls to the Word of Blake",
+   "text": "The Word of Blake lands on Terra and takes it from ComStar. The cradle of humanity changes hands for the first time in almost three centuries."
+  },
+  {
+   "date": "3058-10-01",
+   "title": "A new Star League",
+   "text": "On Tharkad the Great Houses raise the Star League again, at least on paper, and vote to destroy one Clan as a lesson to the rest: the Smoke Jaguars. Sun-Tzu Liao is elected First Lord."
+  },
+  {
+   "date": "3059-05-20",
+   "title": "Operation Bulldog",
+   "text": "Regiments of every House, under one flag, fall on the Smoke Jaguar occupation zone from the Draconis Combine. A second task force has left for the Clan homeworlds.",
+   "major": true,
+   "war_start": [
+    "Operation Bulldog"
+   ],
+   "merc": {
+    "days": 150,
+    "pay": 1.15,
+    "employers": {
+     "DC": 2.0
+    }
+   }
+  },
+  {
+   "date": "3060-04-23",
+   "title": "The Great Refusal",
+   "text": "On Strana Mechty the Star League's champions beat the Clans' in a trial for the invasion itself. The Smoke Jaguars are gone, and the Clan invasion is over.",
+   "major": true
+  },
+  {
+   "date": "3060-12-22",
+   "title": "Katherine takes New Avalon",
+   "text": "With her brother Victor away fighting the Clans, Katherine Steiner-Davion takes the regency of the Federated Commonwealth. She now rules both halves of what her parents built.",
+   "solaris": "Black Hills is not celebrating.",
+   "stable": {
+    "weeks": 52,
+    "tension": 1.1
+   }
+  },
+  {
+   "date": "3062-08-15",
+   "title": "Solaris City burns",
+   "text": "The championship match between Searcy and Vandergriff spills out of Steiner Stadium and into the streets: Davion partisans against Steiner loyalists, with BattleMechs. The Lyran Guards cannot stop it. The stadium is rubble.",
+   "major": true,
+   "solaris": "Whole blocks of Black Hills and Silesia are gone. Everything costs more, and every bout between the two sectors is a grudge match.",
+   "stable": {
+    "weeks": 40,
+    "price_mult": 1.25,
+    "tension": 1.4
+   }
+  },
+  {
+   "date": "3062-11-16",
+   "title": "The FedCom Civil War",
+   "text": "Shots are fired on Kathil, and within weeks regiments that served side by side are fighting each other across both halves of the Federated Commonwealth: for Katherine, or for Victor.",
+   "major": true,
+   "war_start": [
+    "FedCom Civil War"
+   ],
+   "solaris": "The Arcturan Guards keep the peace in Solaris City, more or less.",
+   "stable": {
+    "weeks": 230,
+    "price_mult": 1.2,
+    "tension": 1.3,
+    "jobs": [
+     1.6,
+     1.25
+    ],
+    "draft": {
+     "houses": [
+      "Federated Suns",
+      "Lyran Commonwealth"
+     ],
+     "chance": 0.06,
+     "weeks": 40
+    }
+   },
+   "merc": {
+    "days": 1616,
+    "pay": 1.2,
+    "offers": 1.3,
+    "price": 1.15,
+    "employers": {
+     "LA": 2.0,
+     "FS": 2.0,
+     "FC": 2.0
+    },
+    "note": "Both sides hire, and both sides remember who fought for the other."
+   }
+  },
+  {
+   "date": "3063-03-01",
+   "title": "The Games are suspended",
+   "text": "After another season of fighting in the streets of Solaris City the arena commission stops the top-class Games. The smaller arenas stay open, for smaller money.",
+   "approx": true,
+   "only": "stable",
+   "stable": {
+    "weeks": 26,
+    "purse_mult": 0.75
+   }
+  },
+  {
+   "date": "3067-04-20",
+   "title": "The civil war ends",
+   "text": "Victor Steiner-Davion takes New Avalon and his sister surrenders. Peter Steiner-Davion will rule the Lyran Alliance, Yvonne the Federated Suns. The Federated Commonwealth is gone.",
+   "major": true,
+   "war_end": [
+    "FedCom Civil War"
+   ],
+   "solaris": "Veterans of both sides come looking for arena work.",
+   "stable": {
+    "free_agent_boost": 6
+   },
+   "merc": {
+    "days": 200,
+    "recruits": 1.5,
+    "offers": 0.85
+   }
+  },
+  {
+   "date": "3067-10-15",
+   "title": "Outreach attacked",
+   "text": "Mercenaries in Word of Blake pay attack Wolf's Dragoons at home. Jaime Wolf is killed in single combat three days later. Harlech is a battlefield, and the greatest hiring hall in the Inner Sphere is closed.",
+   "major": true
+  },
+  {
+   "date": "3067-11-28",
+   "title": "The Star League is dissolved",
+   "text": "The House lords vote the second Star League out of existence. The Word of Blake, which was to be admitted to it this year, is left at the door."
+  },
+  {
+   "date": "3067-12-05",
+   "title": "The Jihad",
+   "text": "The Word of Blake answers. Its fleets bombard Tharkad and land on New Avalon, and the holy war spreads from there to every capital.",
+   "major": true,
+   "war_start": [
+    "Word of Blake Jihad"
+   ],
+   "solaris": "Supply lines collapse across the Inner Sphere.",
+   "stable": {
+    "weeks": 200,
+    "price_mult": 1.4,
+    "jobs": [
+     1.5,
+     1.3
+    ]
+   },
+   "merc": {
+    "days": 2180,
+    "pay": 1.25,
+    "offers": 1.2,
+    "price": 1.4,
+    "supply": 2,
+    "note": "The HPG net is failing, factories are burning, and nobody can be sure who a contract is really with."
+   }
+  },
+  {
+   "date": "3068-06-16",
+   "title": "The Word of Blake takes Solaris",
+   "text": "The Twenty-fifth Division lands on Solaris VII. The planet becomes a Blakist protectorate; several hundred of its leading citizens disappear in the first weeks.",
+   "major": true,
+   "solaris": "The great arenas go dark. The fighting that pays now is in the smaller pits, and in the resistance.",
+   "stable": {
+    "weeks": 181,
+    "purse_mult": 0.6,
+    "price_mult": 1.3
+   }
+  },
+  {
+   "date": "3071-12-11",
+   "title": "Solaris is free",
+   "text": "After three years, two battles for Solaris City and the loss of the planet's HPG, the Word of Blake gives up Solaris VII and leaves.",
+   "solaris": "The arenas reopen one class at a time.",
+   "stable": {
+    "free_agent_boost": 4
+   }
+  },
+  {
+   "date": "3073-11-24",
+   "title": "Stone's coalition",
+   "text": "Devlin Stone, a man out of a Blakist prison camp, has the Houses and four Clans fighting under one plan. For the first time the Word of Blake is losing worlds faster than it takes them.",
+   "approx": true,
+   "merc": {
+    "days": 2690,
+    "pay": 1.15,
+    "price": 1.2,
+    "supply": 1
+   }
+  },
+  {
+   "date": "3078-08-25",
+   "title": "Terra liberated",
+   "text": "The coalition takes Terra back from the Word of Blake. What is left of the Jihad is a hunt.",
+   "approx": true,
+   "major": true
+  },
+  {
+   "date": "3081-03-15",
+   "title": "The Republic of the Sphere",
+   "text": "Devlin Stone founds a new state on the worlds around Terra, carved from every House that fought beside him, and is named its first Exarch.",
+   "major": true
+  },
+  {
+   "date": "3081-04-02",
+   "title": "The Jihad ends",
+   "text": "The last Word of Blake stronghold dies on Circinus, and the Master with it. Fourteen years of holy war are over. Much of the Inner Sphere's industry went with them.",
+   "major": true,
+   "war_end": [
+    "Word of Blake Jihad"
+   ],
+   "solaris": "Soldiers with no war left come to the Game World.",
+   "stable": {
+    "free_agent_boost": 6
+   },
+   "merc": {
+    "days": 300,
+    "recruits": 1.4,
+    "offers": 0.85,
+    "note": "Armies stand down. The halls fill with people looking for a command."
+   }
+  },
+  {
+   "date": "3085-10-01",
+   "title": "The long peace",
+   "text": "The Republic is buying up war machines to take them out of service, and its neighbours, tired and broke, let their own regiments shrink. For the first time in three centuries there is less work for soldiers every year.",
+   "approx": true,
+   "solaris": "Out-of-work mercenaries pour onto Solaris to enter the Games; a few outlying towns are briefly run by them.",
+   "stable": {
+    "weeks": 2436,
+    "jobs": [
+     0.6,
+     0.9
+    ],
+    "free_agent_boost": 8
+   },
+   "merc": {
+    "days": 17111,
+    "offers": 0.8,
+    "pay": 0.9,
+    "recruits": 1.25,
+    "note": "Fewer contracts and thinner pay, for as long as the peace holds."
+   }
+  },
+  {
+   "date": "3103-06-01",
+   "title": "The Rasalhague Dominion",
+   "text": "What is left of the Free Rasalhague Republic joins the Ghost Bears who conquered most of it fifty years ago. The new state is called the Rasalhague Dominion, and its first prince is a Magnusson.",
+   "approx": true
+  },
+  {
+   "date": "3103-09-07",
+   "title": "The Victoria War",
+   "text": "The Federated Suns invades the Capellan Confederation. It is the first House war of the Republic's age, and the Republic watches it.",
+   "war_start": [
+    "Victoria War"
+   ],
+   "merc": {
+    "days": 600,
+    "employers": {
+     "FS": 1.6,
+     "CC": 1.6
+    },
+    "pay": 1.1
+   }
+  },
+  {
+   "date": "3130-08-10",
+   "title": "Devlin Stone steps down",
+   "text": "The Exarch retires, promises to return when he is needed, and disappears. Damien Redburn takes the chair."
+  },
+  {
+   "date": "3132-08-07",
+   "title": "Gray Monday",
+   "text": "In one day three quarters of the hyperpulse generators in the Inner Sphere go dark: viruses in some, armed raids on others. Nobody claims it. Worlds that talked every day are now weeks apart by JumpShip, and inside the Republic every prefect, senator and merchant prince starts counting his own 'Mechs.",
+   "major": true,
+   "solaris": "The holovid money dries up with the HPGs, but every warlord needs pilots.",
+   "stable": {
+    "weeks": 300,
+    "price_mult": 1.15,
+    "purse_mult": 0.9,
+    "jobs": [
+     1.6,
+     1.2
+    ]
+   },
+   "merc": {
+    "days": 1500,
+    "offers": 1.3,
+    "pay": 1.1,
+    "price": 1.15,
+    "supply": 1,
+    "note": "Contracts are carried by ship now. There are a great many of them."
+   }
+  },
+  {
+   "date": "3134-11-15",
+   "title": "Skye falls to the Jade Falcons",
+   "text": "The Capellans have taken Liao back, the Draconis Combine is probing, and now Clan Jade Falcon, after one failed landing, holds Skye.",
+   "approx": true
+  },
+  {
+   "date": "3134-11-26",
+   "title": "Victor Steiner-Davion is murdered",
+   "text": "The man who took the Clans' homeworld, lost a throne and won a civil war dies on Terra at a hundred and four, a Paladin of the Republic, killed in his own home.",
+   "solaris": "Black Hills and Silesia mourn him together."
+  },
+  {
+   "date": "3135-11-01",
+   "title": "Fortress Republic",
+   "text": "Exarch Jonah Levin has dissolved a Senate that tried to overthrow him. Now he pulls every loyal regiment back to the worlds around Terra and closes the border behind them: no ship jumps in. Everything outside the wall is left to whoever can take it.",
+   "approx": true,
+   "major": true,
+   "merc": {
+    "days": 1800,
+    "offers": 1.25,
+    "employers": {
+     "CC": 1.5,
+     "DC": 1.5,
+     "ROS": 0.4
+    },
+    "note": "Abandoned prefectures are hiring anyone who will hold a wall; the Houses are hiring to take them."
+   }
+  },
+  {
+   "date": "3135-12-05",
+   "title": "Nerves on the Game World",
+   "text": "A riot at a preliminary bout in Ishiyama, then riots in Valis City on a rumor of Capellan DropShips in the system.",
+   "approx": true,
+   "only": "stable",
+   "stable": {
+    "weeks": 30,
+    "tension": 1.15
+   }
+  },
+  {
+   "date": "3137-07-25",
+   "title": "Operation Hammerfall",
+   "text": "The Lyran Commonwealth invades the broken states of the old Free Worlds League, and Clan Wolf is on the move to join it.",
+   "major": true,
+   "war_start": [
+    "Operation Hammerfall"
+   ],
+   "solaris": "The front is a few jumps from Solaris. Lyran agents hire whatever can walk.",
+   "stable": {
+    "weeks": 147,
+    "price_mult": 1.12,
+    "jobs": [
+     1.6,
+     1.25
+    ],
+    "draft": {
+     "houses": [
+      "Lyran Commonwealth"
+     ],
+     "chance": 0.05,
+     "weeks": 40
+    }
+   },
+   "merc": {
+    "days": 1033,
+    "pay": 1.15,
+    "employers": {
+     "LA": 2.0,
+     "FWL": 1.5
+    }
+   }
+  },
+  {
+   "date": "3139-07-03",
+   "title": "The Free Worlds League reborn",
+   "text": "A year after the Lyrans and Wolves killed the last Captain-General on Stewart, Jessica Marik of Oriente gathers the fragments into a Free Worlds League again. Andurien and Regulus stay out.",
+   "merc": {
+    "days": 400,
+    "employers": {
+     "FWL": 1.6
+    }
+   }
+  },
+  {
+   "date": "3140-05-23",
+   "title": "The Wolves turn",
+   "text": "Clan Wolf makes peace with the Free Worlds League and attacks its Lyran ally from behind. Hammerfall is over; the Commonwealth has a Clan inside its border.",
+   "major": true,
+   "war_end": [
+    "Operation Hammerfall"
+   ],
+   "solaris": "Convoys from Tharkad stop coming.",
+   "stable": {
+    "weeks": 100,
+    "price_mult": 1.15
+   },
+   "merc": {
+    "days": 700,
+    "pay": 1.15,
+    "employers": {
+     "LA": 2.2
+    }
+   }
+  },
+  {
+   "date": "3142-01-01",
+   "title": "The Wolf Empire",
+   "text": "Clan Wolf declares the worlds it has taken from the League and the Commonwealth an empire."
+  },
+  {
+   "date": "3142-06-12",
+   "title": "Falcons and Horses",
+   "text": "Clan Jade Falcon and Clan Hell's Horses invade the Lyran Commonwealth from the other side. Arcturus falls; in August the Kell Hounds are all but wiped out from orbit at Timkovichi.",
+   "major": true,
+   "war_start": [
+    "Falcon/Horses Invasion"
+   ],
+   "solaris": "Every Lyran warrior with a commission is called to the colours.",
+   "stable": {
+    "weeks": 140,
+    "price_mult": 1.2,
+    "jobs": [
+     1.6,
+     1.3
+    ],
+    "draft": {
+     "houses": [
+      "Lyran Commonwealth"
+     ],
+     "chance": 0.08,
+     "weeks": 52
+    }
+   },
+   "merc": {
+    "days": 986,
+    "pay": 1.25,
+    "price": 1.15,
+    "employers": {
+     "LA": 2.5
+    },
+    "note": "The Commonwealth is fighting three Clans and pays accordingly."
+   }
+  },
+  {
+   "date": "3143-07-17",
+   "title": "Tharkad",
+   "text": "Wolves and Falcons both land on the Lyran capital. Archon Melissa Steiner is killed by Wolf Elementals; three days later the Clans are gone again, and Trillian Steiner rules a Commonwealth that is still losing worlds."
+  },
+  {
+   "date": "3144-06-19",
+   "title": "Palmyra",
+   "text": "The Draconis Combine catches the Federated Suns' army on Palmyra and destroys a fifth of it in one battle. First Prince Caleb Davion dies there six days later. Robinson falls in August.",
+   "major": true,
+   "war_start": [
+    "Combine-FedSuns War"
+   ],
+   "merc": {
+    "days": 1600,
+    "pay": 1.2,
+    "employers": {
+     "FS": 2.5,
+     "DC": 1.5
+    },
+    "note": "The Suns will hire anything with a fusion engine."
+   }
+  },
+  {
+   "date": "3144-11-11",
+   "title": "Celestial Reward",
+   "text": "With the Federated Suns on its knees the Capellan Confederation invades from the other side, for the worlds it lost in 3028.",
+   "war_start": [
+    "Capellan-FedSuns War"
+   ],
+   "merc": {
+    "days": 1200,
+    "employers": {
+     "CC": 1.6
+    }
+   }
+  },
+  {
+   "date": "3144-12-24",
+   "title": "The Galatean League",
+   "text": "Galatea, the mercenaries' star, cut off from the Republic and raided by the Jade Falcons, forms a league of its own with its neighbours.",
+   "only": "merc"
+  },
+  {
+   "date": "3145-02-23",
+   "title": "Hesperus holds",
+   "text": "Falcons, Horses and Wolves throw themselves at Hesperus II and its factories for seven weeks, and leave. It is the seventeenth battle for the world, and the Lyrans have won it again. On the far side of the Sphere, New Syrtis has fallen to the Capellans.",
+   "war_end": [
+    "Falcon/Horses Invasion"
+   ]
+  },
+  {
+   "date": "3145-09-16",
+   "title": "The Wolves take Solaris",
+   "text": "The Wolf Empire lands the Ninth Wolf Cavalry on Solaris VII. The Games go on under Clan rule: the Wolves like the arenas well enough to hold their own Trials in them.",
+   "approx": true,
+   "major": true,
+   "solaris": "Trade with Lyran space is cut, and the crowds have new masters to boo.",
+   "stable": {
+    "weeks": 150,
+    "price_mult": 1.15,
+    "tension": 1.15
+   }
+  },
+  {
+   "date": "3146-10-03",
+   "title": "New Avalon falls",
+   "text": "After three months of fighting the Draconis Combine holds the capital of the Federated Suns. The Dragon's banner flies over New Avalon.",
+   "major": true,
+   "merc": {
+    "days": 800,
+    "employers": {
+     "FS": 1.5
+    }
+   }
+  },
+  {
+   "date": "3147-12-25",
+   "title": "New Syrtis retaken",
+   "text": "Julian Davion, crowned in March, takes New Syrtis back from the Capellans. It is the first good news the Federated Suns has had in four years."
+  },
+  {
+   "date": "3148-07-07",
+   "title": "The League is whole",
+   "text": "The Regulan Fiefs surrender to the Free Worlds League. Jessica Marik, who rebuilt it, did not live to see it: she was murdered in March."
+  },
+  {
+   "date": "3148-11-01",
+   "title": "Bondsmen from the arenas",
+   "text": "On Anastasia Kerensky's orders, Wolf warriors are challenging the best gladiators on Solaris to Trials of Possession. The ones who lose leave with a bondcord on their wrist.",
+   "approx": true,
+   "only": "stable"
+  },
+  {
+   "date": "3149-01-06",
+   "title": "The wall comes down",
+   "text": "Fortress Republic shrinks until it covers only Terra's own system, and the Republic's hoarded regiments come out fighting: at the Capellans, at Dieron, at Robinson.",
+   "merc": {
+    "days": 700,
+    "employers": {
+     "ROS": 2.0
+    }
+   }
+  },
+  {
+   "date": "3151-01-01",
+   "title": "The Battle of Terra",
+   "text": "The Wolf Empire's fleet jumps into the Sol system. Clan Jade Falcon is close behind it. Whichever of them takes Terra will call itself the Clan of Clans.",
+   "major": true,
+   "war_start": [
+    "Battle of Terra"
+   ]
+  },
+  {
+   "date": "3151-04-19",
+   "title": "The ilClan",
+   "text": "The Republic of the Sphere surrendered on the fourteenth. Then Wolf and Falcon fought each other for the prize, and the Wolves won. Clan Jade Falcon, which brought everything it had, is broken.",
+   "major": true,
+   "war_end": [
+    "Battle of Terra"
+   ],
+   "solaris": "The Wolf garrison left for Terra months ago and has not come back."
+  },
+  {
+   "date": "3151-05-25",
+   "title": "A Star League under the Wolf",
+   "text": "On Terra, Alaric Ward proclaims the Star League restored and himself its First Lord. Devlin Stone is murdered the same day."
+  },
+  {
+   "date": "3151-07-20",
+   "title": "The Falcon's empty nest",
+   "text": "With the Jade Falcons gone to Terra, their occupation zone comes apart: a merchant league on Alyina, a duke's march on Melissia, and Lyran regiments taking back worlds lost for a century.",
+   "merc": {
+    "days": 500,
+    "offers": 1.2,
+    "employers": {
+     "LA": 2.0
+    },
+    "note": "Garrisons, pirate hunts and old scores from Sudeten to Arc-Royal."
+   }
+  },
+  {
+   "date": "3151-08-15",
+   "title": "Raiders at the spaceport",
+   "text": "'Mechs painted black strike the warehouses along the International Zone and lift off in three DropShips before anyone can stop them. Nobody knows whose they were.",
+   "approx": true,
+   "only": "stable",
+   "stable": {
+    "weeks": 12,
+    "price_mult": 1.08
+   }
+  },
+  {
+   "date": "3152-01-15",
+   "title": "Sea Fox merchants",
+   "text": "Clan Sea Fox opens shop on Solaris VII, selling weapons and parts out of the Wolf Empire's own factories to anyone with C-bills.",
+   "approx": true,
+   "only": "stable",
+   "stable": {
+    "weeks": 60,
+    "price_mult": 0.92
+   }
+  },
+  {
+   "date": "3152-06-06",
+   "title": "The Dragoons' answer",
+   "text": "Wolf's Dragoons fought for Alaric Ward on Terra and did not like how he paid them. Now they have attacked Gienah, the Wolf Empire's capital.",
+   "only": "merc"
+  },
+  {
+   "date": "3152-06-20",
+   "title": "Chang-an burns",
+   "text": "A Raven Alliance fleet bombards the city of Chang-an on Liao from orbit. Chancellor Daoshen Liao dies in it, killed by one of his own agents."
+  },
+  {
+   "date": "3152-06-28",
+   "title": "The League comes for the Wolves",
+   "text": "With the Wolf Empire's army on Terra, the Free Worlds League invades what the Wolves left behind.",
+   "war_start": [
+    "League Invasion of the Wolf Empire"
+   ],
+   "solaris": "The Game World is a Wolf world with no Wolves on it, and the League's ships are a few jumps away.",
+   "stable": {
+    "weeks": 60,
+    "price_mult": 1.12,
+    "jobs": [
+     1.6,
+     1.3
+    ]
+   },
+   "merc": {
+    "days": 500,
+    "pay": 1.15,
+    "employers": {
+     "FWL": 2.0
+    }
+   }
+  },
+  {
+   "date": "3152-07-07",
+   "title": "The Liberty Proclamation",
+   "text": "First Lord Alaric Ward announces his Star League to the Inner Sphere and invites its states to join. Most of them are still deciding whether to laugh or to arm."
+  }
+ ]
+}

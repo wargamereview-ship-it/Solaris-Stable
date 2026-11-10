@@ -1,0 +1,467 @@
+{
+ "_sources": {
+  "engine_weight_standard": "MegaMek Engine.ENGINE_RATINGS (mirrors TechManual Master Engine Table)",
+  "internal_structure": "MegaMek Mek.getInternalForTonnage (mirrors TechManual IS table); cross-checked vs Recognition Guide stat blocks",
+  "rules": "Sarna (Jump Jet, Gyro, Heat Sink pages) + MegaMek MiscType/MekCostCalculator"
+ },
+ "tonnage": {
+  "min": 20,
+  "max": 100,
+  "step": 5,
+  "classes": {
+   "light": [
+    20,
+    35
+   ],
+   "medium": [
+    40,
+    55
+   ],
+   "heavy": [
+    60,
+    75
+   ],
+   "assault": [
+    80,
+    100
+   ]
+  }
+ },
+ "engine": {
+  "rating_rule": "rating = tonnage * walkMP; 10..400 in steps of 5; runMP = ceil(walk * 1.5)",
+  "standard_weight_by_rating": {
+   "10": 0.5,
+   "15": 0.5,
+   "20": 0.5,
+   "25": 0.5,
+   "30": 1.0,
+   "35": 1.0,
+   "40": 1.0,
+   "45": 1.0,
+   "50": 1.5,
+   "55": 1.5,
+   "60": 1.5,
+   "65": 2.0,
+   "70": 2.0,
+   "75": 2.0,
+   "80": 2.5,
+   "85": 2.5,
+   "90": 3.0,
+   "95": 3.0,
+   "100": 3.0,
+   "105": 3.5,
+   "110": 3.5,
+   "115": 4.0,
+   "120": 4.0,
+   "125": 4.0,
+   "130": 4.5,
+   "135": 4.5,
+   "140": 5.0,
+   "145": 5.0,
+   "150": 5.5,
+   "155": 5.5,
+   "160": 6.0,
+   "165": 6.0,
+   "170": 6.0,
+   "175": 7.0,
+   "180": 7.0,
+   "185": 7.5,
+   "190": 7.5,
+   "195": 8.0,
+   "200": 8.5,
+   "205": 8.5,
+   "210": 9.0,
+   "215": 9.5,
+   "220": 10.0,
+   "225": 10.0,
+   "230": 10.5,
+   "235": 11.0,
+   "240": 11.5,
+   "245": 12.0,
+   "250": 12.5,
+   "255": 13.0,
+   "260": 13.5,
+   "265": 14.0,
+   "270": 14.5,
+   "275": 15.5,
+   "280": 16.0,
+   "285": 16.5,
+   "290": 17.5,
+   "295": 18.0,
+   "300": 19.0,
+   "305": 19.5,
+   "310": 20.5,
+   "315": 21.5,
+   "320": 22.5,
+   "325": 23.5,
+   "330": 24.5,
+   "335": 25.5,
+   "340": 27.0,
+   "345": 28.5,
+   "350": 29.5,
+   "355": 31.5,
+   "360": 33.0,
+   "365": 34.5,
+   "370": 36.5,
+   "375": 38.5,
+   "380": 41.0,
+   "385": 43.5,
+   "390": 46.0,
+   "395": 49.0,
+   "400": 52.5
+  },
+  "type_multipliers": {
+   "standard": 1.0,
+   "xl_is": 0.5,
+   "xl_clan": 0.5,
+   "light": 0.75,
+   "compact": 1.5,
+   "xxl": 0.3333333333333333
+  },
+  "type_rounding": "weight = ceil_to_half_ton(standard_weight * multiplier)",
+  "crits": {
+   "standard": {
+    "CT": 6
+   },
+   "xl_is": {
+    "CT": 6,
+    "LT": 3,
+    "RT": 3
+   },
+   "xl_clan": {
+    "CT": 6,
+    "LT": 2,
+    "RT": 2
+   },
+   "light": {
+    "CT": 6,
+    "LT": 2,
+    "RT": 2
+   },
+   "compact": {
+    "CT": 3
+   }
+  },
+  "integral_heat_sinks": "floor(rating / 25), max 10 count toward the free 10",
+  "cost_per_rating_ton_div75": {
+   "standard": 5000,
+   "xl": 20000,
+   "light": 15000,
+   "compact": 10000,
+   "xxl": 100000
+  },
+  "cost_formula": "base * rating * tonnage / 75"
+ },
+ "gyro": {
+  "standard_weight": "ceil(rating / 100)",
+  "crits": 4,
+  "multipliers": {
+   "standard": 1.0,
+   "xl": 0.5,
+   "compact": 1.5,
+   "heavy_duty": 2.0
+  },
+  "crits_by_type": {
+   "standard": 4,
+   "xl": 6,
+   "compact": 2,
+   "heavy_duty": 4
+  },
+  "cost": "300000 * standard_gyro_weight (std); xl 750000*w*0.5; compact 400000*w*1.5; HD 500000*w*2"
+ },
+ "cockpit": {
+  "standard": {
+   "tons": 3,
+   "cost": 200000
+  },
+  "small": {
+   "tons": 2,
+   "cost": 175000
+  }
+ },
+ "internal_structure": {
+  "weight": {
+   "standard": "ceil_to_half_ton(tonnage * 0.10)",
+   "endo_steel": "ceil_to_half_ton(tonnage * 0.05)"
+  },
+  "crits": {
+   "standard": 0,
+   "endo_steel_is": 14,
+   "endo_steel_clan": 7
+  },
+  "cost_per_ton_of_mech": {
+   "standard": 400,
+   "endo_steel": 1600
+  },
+  "points_by_tonnage": {
+   "20": {
+    "HD": 3,
+    "CT": 6,
+    "LT": 5,
+    "RT": 5,
+    "LA": 3,
+    "RA": 3,
+    "LL": 4,
+    "RL": 4
+   },
+   "25": {
+    "HD": 3,
+    "CT": 8,
+    "LT": 6,
+    "RT": 6,
+    "LA": 4,
+    "RA": 4,
+    "LL": 6,
+    "RL": 6
+   },
+   "30": {
+    "HD": 3,
+    "CT": 10,
+    "LT": 7,
+    "RT": 7,
+    "LA": 5,
+    "RA": 5,
+    "LL": 7,
+    "RL": 7
+   },
+   "35": {
+    "HD": 3,
+    "CT": 11,
+    "LT": 8,
+    "RT": 8,
+    "LA": 6,
+    "RA": 6,
+    "LL": 8,
+    "RL": 8
+   },
+   "40": {
+    "HD": 3,
+    "CT": 12,
+    "LT": 10,
+    "RT": 10,
+    "LA": 6,
+    "RA": 6,
+    "LL": 10,
+    "RL": 10
+   },
+   "45": {
+    "HD": 3,
+    "CT": 14,
+    "LT": 11,
+    "RT": 11,
+    "LA": 7,
+    "RA": 7,
+    "LL": 11,
+    "RL": 11
+   },
+   "50": {
+    "HD": 3,
+    "CT": 16,
+    "LT": 12,
+    "RT": 12,
+    "LA": 8,
+    "RA": 8,
+    "LL": 12,
+    "RL": 12
+   },
+   "55": {
+    "HD": 3,
+    "CT": 18,
+    "LT": 13,
+    "RT": 13,
+    "LA": 9,
+    "RA": 9,
+    "LL": 13,
+    "RL": 13
+   },
+   "60": {
+    "HD": 3,
+    "CT": 20,
+    "LT": 14,
+    "RT": 14,
+    "LA": 10,
+    "RA": 10,
+    "LL": 14,
+    "RL": 14
+   },
+   "65": {
+    "HD": 3,
+    "CT": 21,
+    "LT": 15,
+    "RT": 15,
+    "LA": 10,
+    "RA": 10,
+    "LL": 15,
+    "RL": 15
+   },
+   "70": {
+    "HD": 3,
+    "CT": 22,
+    "LT": 15,
+    "RT": 15,
+    "LA": 11,
+    "RA": 11,
+    "LL": 15,
+    "RL": 15
+   },
+   "75": {
+    "HD": 3,
+    "CT": 23,
+    "LT": 16,
+    "RT": 16,
+    "LA": 12,
+    "RA": 12,
+    "LL": 16,
+    "RL": 16
+   },
+   "80": {
+    "HD": 3,
+    "CT": 25,
+    "LT": 17,
+    "RT": 17,
+    "LA": 13,
+    "RA": 13,
+    "LL": 17,
+    "RL": 17
+   },
+   "85": {
+    "HD": 3,
+    "CT": 27,
+    "LT": 18,
+    "RT": 18,
+    "LA": 14,
+    "RA": 14,
+    "LL": 18,
+    "RL": 18
+   },
+   "90": {
+    "HD": 3,
+    "CT": 29,
+    "LT": 19,
+    "RT": 19,
+    "LA": 15,
+    "RA": 15,
+    "LL": 19,
+    "RL": 19
+   },
+   "95": {
+    "HD": 3,
+    "CT": 30,
+    "LT": 20,
+    "RT": 20,
+    "LA": 16,
+    "RA": 16,
+    "LL": 20,
+    "RL": 20
+   },
+   "100": {
+    "HD": 3,
+    "CT": 31,
+    "LT": 21,
+    "RT": 21,
+    "LA": 17,
+    "RA": 17,
+    "LL": 21,
+    "RL": 21
+   }
+  }
+ },
+ "armor": {
+  "points_per_ton": {
+   "standard": 16,
+   "ferro_fibrous_is": 17.92,
+   "ferro_fibrous_clan": 19.2
+  },
+  "max": "HD 9; every other location 2x its internal structure (front+rear torso combined)",
+  "crits": {
+   "standard": 0,
+   "ferro_fibrous_is": 14,
+   "ferro_fibrous_clan": 7
+  },
+  "cost_per_ton": {
+   "standard": 10000,
+   "ferro_fibrous": 20000
+  }
+ },
+ "jump_jets": {
+  "max": "walkMP (standard jets)",
+  "tons_each": {
+   "<=55": 0.5,
+   "60-85": 1.0,
+   "90-100": 2.0
+  },
+  "crits_each": 1,
+  "cost": "200 * tonnage * jumpMP^2"
+ },
+ "heat_sinks": {
+  "single": {
+   "dissipation": 1,
+   "tons": 1,
+   "crits": 1
+  },
+  "double_is": {
+   "dissipation": 2,
+   "tons": 1,
+   "crits": 3
+  },
+  "double_clan": {
+   "dissipation": 2,
+   "tons": 1,
+   "crits": 2
+  },
+  "minimum": 10,
+  "free_weight": 10,
+  "cost": "single 2000 each beyond 10; double 6000 each (all)"
+ },
+ "crit_slots": {
+  "HD": 6,
+  "CT": 12,
+  "LT": 12,
+  "RT": 12,
+  "LA": 12,
+  "RA": 12,
+  "LL": 6,
+  "RL": 6
+ },
+ "fixed_crits": {
+  "HD": [
+   "Life Support",
+   "Sensors",
+   "Cockpit",
+   "Sensors",
+   "Life Support"
+  ],
+  "CT": [
+   "Gyro x4 (after engine)"
+  ],
+  "arm": [
+   "Shoulder",
+   "Upper Arm",
+   "Lower Arm (opt)",
+   "Hand (opt)"
+  ],
+  "leg": [
+   "Hip",
+   "Upper Leg",
+   "Lower Leg",
+   "Foot"
+  ]
+ },
+ "chassis_cost": {
+  "life_support": 50000,
+  "sensors_per_ton": 2000,
+  "myomer_per_ton": {
+   "standard": 2000,
+   "tsm": 16000
+  },
+  "actuators_per_ton": {
+   "upper_arm": 100,
+   "lower_arm": 50,
+   "hand": 80,
+   "upper_leg": 150,
+   "lower_leg": 80,
+   "foot": 120
+  },
+  "final_multiplier": "1 + tonnage / 100"
+ }
+}

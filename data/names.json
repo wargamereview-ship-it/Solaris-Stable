@@ -1,0 +1,39 @@
+{
+  "_note": "Name pools by culture for generated MechWarriors and stables. Edit freely.",
+  "cultures": {
+    "Lyran Commonwealth": {
+      "male": ["Karl", "Dieter", "Jurgen", "Wolfgang", "Erich", "Hans", "Lukas", "Matthias", "Stefan", "Tobias", "Viktor", "Anton", "Felix", "Georg", "Klaus", "Otto", "Rainer", "Sven", "Ulrich", "Henrik"],
+      "female": ["Greta", "Ingrid", "Katrin", "Liesl", "Monika", "Petra", "Sabine", "Ursula", "Anja", "Brigitte", "Elke", "Frieda", "Heike", "Johanna", "Margit", "Renate"],
+      "last": ["Brandt", "Vogel", "Kessler", "Hartmann", "Krause", "Lindner", "Neumann", "Richter", "Schaefer", "Weber", "Zimmer", "Bauer", "Falk", "Gerlach", "Hoffmann", "Jaeger", "Kraus", "Lorenz", "Maier", "Ostermann", "Pohl", "Reinholt", "Sauer", "Thiel", "Ulbrich", "Voss", "Winter"]
+    },
+    "Draconis Combine": {
+      "male": ["Hiroshi", "Kenji", "Takeshi", "Daisuke", "Haruto", "Isamu", "Jiro", "Kazuo", "Makoto", "Noboru", "Ryo", "Satoshi", "Shinji", "Tadashi", "Yoshiro", "Akira"],
+      "female": ["Akiko", "Emiko", "Hana", "Keiko", "Mariko", "Naoko", "Rei", "Sachiko", "Tomoko", "Yumi", "Aiko", "Chie", "Fumiko", "Kaori"],
+      "last": ["Tanaka", "Watanabe", "Yamamoto", "Kobayashi", "Saito", "Inoue", "Kimura", "Hayashi", "Shimizu", "Mori", "Ikeda", "Hashimoto", "Ishikawa", "Ogawa", "Okada", "Fujita", "Nakamura", "Sakamoto", "Takeda", "Ueda"]
+    },
+    "Capellan Confederation": {
+      "male": ["Wei", "Jun", "Hao", "Ming", "Bo", "Chen", "Dao", "Feng", "Guang", "Jian", "Kang", "Lei", "Peng", "Qiang", "Shen", "Tao"],
+      "female": ["Mei", "Lin", "Xia", "Yan", "Hua", "Jia", "Li", "Na", "Qing", "Rong", "Shu", "Ting", "Wen", "Yue"],
+      "last": ["Wang", "Zhang", "Chen", "Liu", "Huang", "Zhao", "Wu", "Zhou", "Xu", "Sun", "Ma", "Hu", "Guo", "He", "Lin", "Luo", "Song", "Tang", "Xie", "Yang"]
+    },
+    "Free Worlds League": {
+      "male": ["Marco", "Pavel", "Dmitri", "Luca", "Andrei", "Bogdan", "Emil", "Giovanni", "Ivo", "Milos", "Nikola", "Roman", "Silvio", "Tomas", "Vasil", "Zoran"],
+      "female": ["Alessia", "Dana", "Elena", "Irina", "Katya", "Lucia", "Mila", "Nadia", "Paola", "Rosa", "Sofia", "Tatiana", "Vera", "Zora"],
+      "last": ["Marchetti", "Novak", "Petrov", "Rossi", "Dvorak", "Kovac", "Bianchi", "Horvat", "Ivanov", "Jankovic", "Lombardi", "Marin", "Orsini", "Popescu", "Romano", "Stojan", "Tesla", "Vukovic", "Zanetti", "Galli"]
+    },
+    "Federated Suns": {
+      "male": ["James", "Robert", "Michael", "Daniel", "Edward", "Francis", "Gabriel", "Henri", "Julien", "Lawrence", "Marcel", "Nathan", "Owen", "Philippe", "Raymond", "Thomas"],
+      "female": ["Catherine", "Claire", "Diane", "Eleanor", "Genevieve", "Helen", "Isabelle", "Juliette", "Laura", "Madeleine", "Nicole", "Rachel", "Simone", "Vivian"],
+      "last": ["Ashford", "Beaumont", "Carver", "Delacroix", "Ellison", "Fontaine", "Garrett", "Hale", "Lambert", "Moreau", "Norwood", "Prescott", "Quinlan", "Renard", "Sinclair", "Thornton", "Vance", "Whitfield", "Archer", "Bellamy"]
+    },
+    "Mercenary": {
+      "male": ["Jack", "Sam", "Rafe", "Cole", "Dex", "Eli", "Finn", "Gus", "Hank", "Ike", "Jonah", "Kit", "Mack", "Nico", "Rook", "Vic"],
+      "female": ["Ash", "Bree", "Cass", "Dell", "Fay", "Gwen", "Jo", "Kat", "Lex", "Mags", "Nell", "Rue", "Tess", "Wren"],
+      "last": ["Blackwood", "Cross", "Drake", "Flint", "Graves", "Hollis", "Kane", "Locke", "Marsh", "Nash", "Pike", "Reyes", "Slade", "Stone", "Thorne", "Voss", "Wilder", "Yates", "Colt", "Rourke"]
+    }
+  },
+  "callsigns": ["Hammer", "Viper", "Ghost", "Brick", "Ronin", "Torch", "Anvil", "Jackal", "Raptor", "Cinder", "Banshee", "Gravedigger", "Lucky", "Saint", "Razor", "Tank", "Spike", "Wraith", "Nova", "Bulldog", "Kestrel", "Mongrel", "Sledge", "Cobra", "Hex", "Crusher", "Mirage", "Vandal", "Talon", "Bishop", "Dagger", "Ember", "Grizzly", "Hornet", "Jester", "Longshot", "Maverick", "Nightshade", "Outlaw", "Phantom", "Quake", "Redline", "Scythe", "Tempest", "Undertow", "Vortex", "Warlock", "Zealot", "Ironside", "Duchess"],
+  "stable_words_a": ["Iron", "Crimson", "Black", "Silver", "Thunder", "Red", "Steel", "Golden", "Storm", "Shadow", "Blue", "Copper", "Night", "Burning", "Cobalt", "Grey", "Jade", "Obsidian", "Savage", "White"],
+  "stable_words_b": ["Lions", "Fists", "Hammers", "Wolves", "Dragons", "Hawks", "Titans", "Jackals", "Blades", "Bulls", "Ravens", "Serpents", "Comets", "Gauntlets", "Knights", "Furies", "Devils", "Rams", "Stallions", "Vipers"],
+  "stable_forms": ["{a} {b}", "{a} {b} Stable", "House of {b}", "{last} Stables", "{last} & Sons", "{a} {b} Collective"]
+}

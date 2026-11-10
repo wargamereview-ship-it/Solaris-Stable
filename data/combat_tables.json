@@ -1,0 +1,1234 @@
+{
+ "_source": "BattleMech Manual reference tables (PDF pp. 139-142) plus the standard heat scale. Real-time conversion: 1 turn = 10 s, 1 hex = 30 m, 1 MP = 3 m/s.",
+ "turn_seconds": 10.0,
+ "hex_meters": 30.0,
+ "tick_hz": 20,
+ "time_limit_seconds": 360.0,
+ "hit_location": {
+  "front": {
+   "2": "CT*",
+   "3": "RA",
+   "4": "RA",
+   "5": "RL",
+   "6": "RT",
+   "7": "CT",
+   "8": "LT",
+   "9": "LL",
+   "10": "LA",
+   "11": "LA",
+   "12": "HD"
+  },
+  "left": {
+   "2": "LT*",
+   "3": "LL",
+   "4": "LA",
+   "5": "LA",
+   "6": "LL",
+   "7": "LT",
+   "8": "CT",
+   "9": "RT",
+   "10": "RA",
+   "11": "RL",
+   "12": "HD"
+  },
+  "right": {
+   "2": "RT*",
+   "3": "RL",
+   "4": "RA",
+   "5": "RA",
+   "6": "RL",
+   "7": "RT",
+   "8": "CT",
+   "9": "LT",
+   "10": "LA",
+   "11": "LL",
+   "12": "HD"
+  }
+ },
+ "punch_location": {
+  "front": {
+   "1": "LA",
+   "2": "LT",
+   "3": "CT",
+   "4": "RT",
+   "5": "RA",
+   "6": "HD"
+  },
+  "left": {
+   "1": "LT",
+   "2": "LT",
+   "3": "CT",
+   "4": "LA",
+   "5": "LA",
+   "6": "HD"
+  },
+  "right": {
+   "1": "RT",
+   "2": "RT",
+   "3": "CT",
+   "4": "RA",
+   "5": "RA",
+   "6": "HD"
+  }
+ },
+ "kick_location": {
+  "front": {
+   "1": "RL",
+   "2": "RL",
+   "3": "RL",
+   "4": "LL",
+   "5": "LL",
+   "6": "LL"
+  },
+  "left": {
+   "1": "LL",
+   "2": "LL",
+   "3": "LL",
+   "4": "LL",
+   "5": "LL",
+   "6": "LL"
+  },
+  "right": {
+   "1": "RL",
+   "2": "RL",
+   "3": "RL",
+   "4": "RL",
+   "5": "RL",
+   "6": "RL"
+  }
+ },
+ "cluster_sizes": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  10,
+  12,
+  15,
+  20,
+  30,
+  40
+ ],
+ "cluster_hits": {
+  "2": [
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   5,
+   6,
+   10,
+   12
+  ],
+  "3": [
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   3,
+   3,
+   4,
+   5,
+   6,
+   10,
+   12
+  ],
+  "4": [
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4,
+   5,
+   6,
+   9,
+   12,
+   18
+  ],
+  "5": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   12,
+   18,
+   24
+  ],
+  "6": [
+   1,
+   2,
+   2,
+   3,
+   4,
+   4,
+   5,
+   6,
+   8,
+   9,
+   12,
+   18,
+   24
+  ],
+  "7": [
+   1,
+   2,
+   3,
+   3,
+   4,
+   4,
+   5,
+   6,
+   8,
+   9,
+   12,
+   18,
+   24
+  ],
+  "8": [
+   2,
+   2,
+   3,
+   3,
+   4,
+   4,
+   5,
+   6,
+   8,
+   9,
+   12,
+   18,
+   24
+  ],
+  "9": [
+   2,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   10,
+   12,
+   16,
+   24,
+   32
+  ],
+  "10": [
+   2,
+   3,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   10,
+   12,
+   16,
+   24,
+   32
+  ],
+  "11": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   12,
+   15,
+   20,
+   30,
+   40
+  ],
+  "12": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   12,
+   15,
+   20,
+   30,
+   40
+  ]
+ },
+ "target_movement": [
+  [
+   0,
+   2,
+   0
+  ],
+  [
+   3,
+   4,
+   1
+  ],
+  [
+   5,
+   6,
+   2
+  ],
+  [
+   7,
+   9,
+   3
+  ],
+  [
+   10,
+   17,
+   4
+  ],
+  [
+   18,
+   24,
+   5
+  ],
+  [
+   25,
+   999,
+   6
+  ]
+ ],
+ "attacker_movement": {
+  "stand": 0,
+  "walk": 1,
+  "run": 2,
+  "jump": 3,
+  "prone": 2
+ },
+ "range_mod": {
+  "short": 0,
+  "medium": 2,
+  "long": 4
+ },
+ "terrain_mod": {
+  "light_woods": 1,
+  "heavy_woods": 2,
+  "partial_cover": 1,
+  "woods_block_total": 3
+ },
+ "target_mod": {
+  "prone_adjacent": -2,
+  "prone": 1,
+  "immobile": -4,
+  "jumped": 1
+ },
+ "damage_mod": {
+  "sensor_hit": 2,
+  "shoulder": 4,
+  "arm_actuator": 1
+ },
+ "heat_to_hit": [
+  [
+   8,
+   1
+  ],
+  [
+   13,
+   2
+  ],
+  [
+   17,
+   3
+  ],
+  [
+   24,
+   4
+  ]
+ ],
+ "heat_move": [
+  [
+   5,
+   1
+  ],
+  [
+   10,
+   2
+  ],
+  [
+   15,
+   3
+  ],
+  [
+   20,
+   4
+  ],
+  [
+   25,
+   5
+  ]
+ ],
+ "heat_shutdown": [
+  [
+   14,
+   4
+  ],
+  [
+   18,
+   6
+  ],
+  [
+   22,
+   8
+  ],
+  [
+   26,
+   10
+  ],
+  [
+   30,
+   99
+  ]
+ ],
+ "heat_ammo": [
+  [
+   19,
+   4
+  ],
+  [
+   23,
+   6
+  ],
+  [
+   28,
+   8
+  ]
+ ],
+ "heat_pilot_life_support": [
+  [
+   15,
+   1
+  ],
+  [
+   26,
+   2
+  ]
+ ],
+ "crit_chance": {
+  "8": 1,
+  "9": 1,
+  "10": 2,
+  "11": 2,
+  "12": 3
+ },
+ "consciousness": {
+  "1": 3,
+  "2": 5,
+  "3": 7,
+  "4": 10,
+  "5": 11
+ },
+ "psr_mod": {
+  "damage_20": 1,
+  "gyro_hit": 3,
+  "hip": 2,
+  "leg_actuator": 1,
+  "leg_destroyed": 5
+ },
+ "physical": {
+  "punch": {
+   "to_hit": 0,
+   "per_tons": 10
+  },
+  "kick": {
+   "to_hit": -2,
+   "per_tons": 5
+  },
+  "hatchet": {
+   "to_hit": -1,
+   "per_tons": 5
+  },
+  "sword": {
+   "to_hit": -2,
+   "per_tons": 10,
+   "bonus": 1
+  },
+  "mace": {
+   "to_hit": 1,
+   "per_tons": 4
+  },
+  "reach_m": 40.0,
+  "charge": {
+   "to_hit": 0,
+   "per_tons": 10,
+   "note": "damage = ceil(tons/10) per hex moved in the last 10 s; attacker takes ceil(target tons/10)"
+  },
+  "dfa": {
+   "to_hit": 0,
+   "per_tons": 10,
+   "mult": 3,
+   "self_per_tons": 5,
+   "note": "target: ceil(tons/10)x3 on the punch table; attacker: ceil(tons/5) to the legs; a miss means the attacker falls"
+  },
+  "push": {
+   "to_hit": -1,
+   "distance_m": 30.0
+  },
+  "club": {
+   "to_hit": -1,
+   "per_tons": 5,
+   "uses": 3
+  },
+  "claw": {
+   "to_hit": 1,
+   "per_tons": 7
+  },
+  "retractable_blade": {
+   "to_hit": -2,
+   "per_tons": 10
+  },
+  "lance": {
+   "to_hit": 2,
+   "per_tons": 5
+  },
+  "vibroblade_small": {
+   "to_hit": -1,
+   "per_tons": 1000,
+   "fixed": 7
+  },
+  "vibroblade_medium": {
+   "to_hit": -1,
+   "per_tons": 1000,
+   "fixed": 10
+  },
+  "vibroblade_large": {
+   "to_hit": -1,
+   "per_tons": 1000,
+   "fixed": 14
+  },
+  "chain_whip": {
+   "to_hit": -2,
+   "per_tons": 1000,
+   "fixed": 3
+  },
+  "chainsaw": {
+   "to_hit": 0,
+   "per_tons": 1000,
+   "fixed": 5
+  },
+  "mining_drill": {
+   "to_hit": 0,
+   "per_tons": 1000,
+   "fixed": 4
+  },
+  "wrecking_ball": {
+   "to_hit": 1,
+   "per_tons": 1000,
+   "fixed": 8
+  },
+  "backhoe": {
+   "to_hit": 1,
+   "per_tons": 1000,
+   "fixed": 6
+  },
+  "pile_driver": {
+   "to_hit": 2,
+   "per_tons": 1000,
+   "fixed": 10
+  },
+  "dual_saw": {
+   "to_hit": 0,
+   "per_tons": 1000,
+   "fixed": 7
+  },
+  "rock_cutter": {
+   "to_hit": 0,
+   "per_tons": 1000,
+   "fixed": 5
+  },
+  "combine": {
+   "to_hit": 0,
+   "per_tons": 1000,
+   "fixed": 3
+  }
+ },
+ "movement_heat_per_turn": {
+  "stand": 0,
+  "walk": 1,
+  "run": 2
+ },
+ "engine_hit_heat": 5,
+ "ammo_explosion_pilot_hits": 2,
+ "conditions": {
+  "_source": "BattleMech Manual attack modifiers (weather and light). Night = full moon.",
+  "light": {
+   "day": 0,
+   "dusk": 1,
+   "night": 2
+  },
+  "weather": {
+   "clear": {},
+   "rain": {
+    "all": 1,
+    "ignite": 2
+   },
+   "snow": {
+    "all": 1,
+    "ignite": 2
+   },
+   "fog": {
+    "energy": 1,
+    "max_los_m": 330.0
+   },
+   "wind": {
+    "missile": 1,
+    "spread": 2
+   }
+  },
+  "floodlights_reduce": 1,
+  "heat_lit": [
+   [
+    10,
+    1
+   ],
+   [
+    20,
+    2
+   ]
+  ],
+  "searchlight_m": 300.0
+ },
+ "munitions": {
+  "_note": "Alternate ammunition chosen per bout. Intro years are approximate; check them against your books.",
+  "standard": {
+   "label": "Standard",
+   "families": [
+    "*"
+   ],
+   "intro": 0
+  },
+  "lbx_cluster": {
+   "label": "LB-X cluster",
+   "families": [
+    "lbx"
+   ],
+   "intro": 0,
+   "to_hit": -1,
+   "cluster": true,
+   "per_hit": 1
+  },
+  "inferno": {
+   "label": "Inferno",
+   "families": [
+    "srm"
+   ],
+   "intro": 2380,
+   "damage": 0,
+   "heat_per_missile": 2,
+   "ignite_tn": 5
+  },
+  "armor_piercing": {
+   "label": "Armor-piercing",
+   "families": [
+    "ac"
+   ],
+   "intro": 3059,
+   "to_hit": 1,
+   "shots_mult": 0.5,
+   "crit_on_hit": true
+  },
+  "precision": {
+   "label": "Precision",
+   "families": [
+    "ac"
+   ],
+   "intro": 3062,
+   "to_hit": -2,
+   "shots_mult": 0.5
+  }
+ },
+ "masc": {
+  "_note": "MASC: run at Walk x2. Roll each turn it was used; the target number climbs while it stays on.",
+  "tn": [
+   3,
+   5,
+   7,
+   11,
+   13
+  ],
+  "fail": "hips"
+ },
+ "electronics": {
+  "ecm_m": 180.0,
+  "c3": true,
+  "narc_cluster_bonus": 2,
+  "artemis_cluster_bonus": 2
+ },
+ "fire": {
+  "flamer_ignite_tn": 7,
+  "laser_ignite_tn": 11,
+  "explosion_ignite_tn": 7,
+  "burn_seconds": {
+   "light_woods": [
+    30,
+    50
+   ],
+   "heavy_woods": [
+    50,
+    80
+   ]
+  },
+  "spread_tn": 10,
+  "spread_tn_downwind": 8,
+  "smoke_after_s": 15.0,
+  "heat_per_turn_in_fire": 2,
+  "smoke_light": 1,
+  "smoke_heavy": 2
+ },
+ "buildings": {
+  "miss_hit_chance": 0.45,
+  "explosion_damage": 15,
+  "collapse_debris_damage": 5,
+  "stray_hit_chance": 0.35,
+  "cf_note": "Building cells get 8 CF per level + 10 (set by the arena generator)"
+ },
+ "corner_calls_per_fight": 3,
+ "vehicle_hit_location": {
+  "front": {
+   "2": "FR*",
+   "3": "FR!",
+   "4": "FR!",
+   "5": "RS!",
+   "6": "FR",
+   "7": "FR",
+   "8": "FR",
+   "9": "LS!",
+   "10": "TU",
+   "11": "TU",
+   "12": "TU*"
+  },
+  "rear": {
+   "2": "RR*",
+   "3": "RR!",
+   "4": "RR!",
+   "5": "LS!",
+   "6": "RR",
+   "7": "RR",
+   "8": "RR",
+   "9": "RS!",
+   "10": "TU",
+   "11": "TU",
+   "12": "TU*"
+  },
+  "side": {
+   "2": "S*",
+   "3": "S!",
+   "4": "S!",
+   "5": "FR!",
+   "6": "S",
+   "7": "S",
+   "8": "S*",
+   "9": "RR!",
+   "10": "TU",
+   "11": "TU",
+   "12": "TU*"
+  }
+ },
+ "vtol_hit_location": {
+  "front": {
+   "2": "FR*",
+   "3": "RO!",
+   "4": "RO!",
+   "5": "RS",
+   "6": "FR",
+   "7": "FR",
+   "8": "FR",
+   "9": "LS",
+   "10": "RO!",
+   "11": "RO!",
+   "12": "RO*!"
+  },
+  "rear": {
+   "2": "RR*",
+   "3": "RO!",
+   "4": "RO!",
+   "5": "LS",
+   "6": "RR",
+   "7": "RR",
+   "8": "RR",
+   "9": "RS",
+   "10": "RO!",
+   "11": "RO!",
+   "12": "RO*!"
+  },
+  "side": {
+   "2": "S*",
+   "3": "RO!",
+   "4": "RO!",
+   "5": "FR",
+   "6": "S",
+   "7": "S",
+   "8": "S*",
+   "9": "RR",
+   "10": "RO!",
+   "11": "RO!",
+   "12": "RO*!"
+  }
+ },
+ "motive_damage": {
+  "table": [
+   [
+    2,
+    5,
+    "none"
+   ],
+   [
+    6,
+    7,
+    "minor"
+   ],
+   [
+    8,
+    9,
+    "moderate"
+   ],
+   [
+    10,
+    11,
+    "heavy"
+   ],
+   [
+    12,
+    99,
+    "immobile"
+   ]
+  ],
+  "mods": {
+   "rear": 1,
+   "side": 2,
+   "tracked": 0,
+   "wheeled": 2,
+   "hover": 3
+  }
+ },
+ "vehicle_crits": {
+  "front": {
+   "6": "driver",
+   "7": "weapon_malfunction",
+   "8": "stabilizer",
+   "9": "sensors",
+   "10": "commander",
+   "11": "weapon_destroyed",
+   "12": "crew_killed"
+  },
+  "side": {
+   "6": "cargo",
+   "7": "weapon_malfunction",
+   "8": "crew_stunned",
+   "9": "stabilizer",
+   "10": "weapon_destroyed",
+   "11": "engine",
+   "12": "fuel_tank"
+  },
+  "rear": {
+   "6": "weapon_malfunction",
+   "7": "cargo",
+   "8": "stabilizer",
+   "9": "weapon_destroyed",
+   "10": "engine",
+   "11": "ammunition",
+   "12": "fuel_tank"
+  },
+  "turret": {
+   "6": "stabilizer",
+   "7": "turret_jam",
+   "8": "weapon_malfunction",
+   "9": "turret_locks",
+   "10": "weapon_destroyed",
+   "11": "ammunition",
+   "12": "turret_blown_off"
+  }
+ },
+ "vtol_crits": {
+  "front": {
+   "6": "copilot",
+   "7": "weapon_malfunction",
+   "8": "stabilizer",
+   "9": "sensors",
+   "10": "pilot",
+   "11": "weapon_destroyed",
+   "12": "crew_killed"
+  },
+  "side": {
+   "6": "weapon_malfunction",
+   "7": "cargo",
+   "8": "stabilizer",
+   "9": "weapon_destroyed",
+   "10": "engine",
+   "11": "ammunition",
+   "12": "fuel_tank"
+  },
+  "rear": {
+   "6": "cargo",
+   "7": "weapon_malfunction",
+   "8": "stabilizer",
+   "9": "weapon_destroyed",
+   "10": "sensors",
+   "11": "engine",
+   "12": "fuel_tank"
+  },
+  "rotor": {
+   "6": "rotor_damage",
+   "7": "rotor_damage",
+   "8": "rotor_damage",
+   "9": "flight_stabilizer",
+   "10": "flight_stabilizer",
+   "11": "rotors_destroyed",
+   "12": "rotors_destroyed"
+  }
+ },
+ "vehicle": {
+  "height_levels": 1.0,
+  "vtol_elevation_levels": 4.0,
+  "vtol_tmm_bonus": 1,
+  "stun_seconds": 10.0,
+  "jam_seconds": 10.0,
+  "malfunction_seconds": 10.0,
+  "turret_turn_deg_s": 90.0,
+  "rotor_damage_div": 10,
+  "sensor_to_hit": 1,
+  "sensor_blind_at": 4,
+  "commander_to_hit": 1,
+  "copilot_to_hit": 1,
+  "immobile_to_hit": -4
+ },
+ "merc_battle": {
+  "exit_margin_m": 22.0,
+  "spot_range_m": 1400.0,
+  "spot_every_ticks": 10,
+  "rout_bv_fraction": 0.35,
+  "formation_spacing_m": 38.0
+ },
+ "infantry": {
+  "damage_div": 10,
+  "missile_div": 5,
+  "pulse_bonus": 2,
+  "lbx_bonus": 1,
+  "burst": {
+   "mg": 2,
+   "lmg": 1,
+   "hmg": 3,
+   "flamer": 4,
+   "apgauss": 2,
+   "rifle": 1
+  },
+  "open_mult": 2,
+  "area_mult": 2,
+  "ba_to_hit": 1,
+  "leg_attack": {
+   "reach_m": 34.0,
+   "damage_ba": 4,
+   "damage_per_trooper": 0.18,
+   "mods": [
+    [
+     0.75,
+     0
+    ],
+    [
+     0.5,
+     2
+    ],
+    [
+     0.25,
+     5
+    ],
+    [
+     0.0,
+     7
+    ]
+   ]
+  },
+  "break_fraction": 0.3,
+  "group": 2
+ },
+ "support": {
+  "artillery": {
+   "label": "Artillery",
+   "delay_s": 20.0,
+   "radius_m": 45.0,
+   "damage": 20,
+   "splash": 10,
+   "scatter_m": 30.0,
+   "shells": 3,
+   "shell_gap_s": 1.5,
+   "building_damage": 20,
+   "ignite_tn": 9
+  },
+  "air_strike": {
+   "label": "Air strike",
+   "delay_s": 12.0,
+   "length_m": 240.0,
+   "width_m": 30.0,
+   "damage": 15,
+   "hits": 2,
+   "scatter_m": 15.0,
+   "building_damage": 15,
+   "ignite_tn": 8,
+   "to_hit": 7
+  }
+ },
+ "armor_types": {
+  "_note": "What an armor type does in a fight, by the kind of damage (energy, ballistic, missile, physical, fall, area). half / double / third_off change the damage of a hit on a location that still has armor; reduce_per takes one point off per so many; armor_double makes each point of armor soak two; stealth is the to-hit modifier for an attacker at short, medium and long range while the armor's ECM works, at `heat` per turn; crit_mod shifts through-armor critical rolls; external_heat scales heat put on the 'Mech by flamers, infernos and plasma; bar is the damage in one hit above which the armor is breached and a critical is rolled.",
+  "stealth": {
+   "stealth": [
+    0,
+    1,
+    2
+   ],
+   "heat": 10,
+   "needs_ecm": true
+  },
+  "ferro_lamellor": {
+   "reduce_per": 5
+  },
+  "reflective": {
+   "half": [
+    "energy"
+   ],
+   "double": [
+    "physical",
+    "fall",
+    "area"
+   ]
+  },
+  "reflective_clan": {
+   "half": [
+    "energy"
+   ],
+   "double": [
+    "physical",
+    "fall",
+    "area"
+   ]
+  },
+  "reactive": {
+   "half": [
+    "missile",
+    "area"
+   ]
+  },
+  "reactive_clan": {
+   "half": [
+    "missile",
+    "area"
+   ]
+  },
+  "hardened": {
+   "armor_double": true,
+   "run_minus": 1
+  },
+  "ballistic_reinforced": {
+   "half": [
+    "ballistic",
+    "missile"
+   ]
+  },
+  "impact_resistant": {
+   "third_off": [
+    "physical",
+    "fall"
+   ]
+  },
+  "anti_penetrative": {
+   "crit_mod": -2
+  },
+  "heat_dissipating": {
+   "external_heat": 0.5
+  },
+  "commercial": {
+   "bar": 5
+  }
+ },
+ "structure_types": {
+  "_note": "Damage one point of internal structure soaks: composite gives way twice as fast, reinforced half as fast.",
+  "composite": {
+   "soak": 0.5
+  },
+  "reinforced": {
+   "soak": 2.0
+  }
+ },
+ "gear": {
+  "_note": "Equipment effects. signature: to-hit modifiers for an attacker at short/medium/long range and the heat per turn it costs. partial_wing: extra jump MP by weight class and heat shed per turn. tsemp / taser: 2d6 plus the target's modifier; interfere_at gives the target +to_hit for a turn, shutdown_at also stops its weapons for a turn. plasma: dice of heat put on a 'Mech (added as damage against anything else). artillery: a 'Mech's own tube fires at a point; the shell lands after the flight time and scatters if the to-hit roll failed.",
+  "signature": {
+   "null_sig": {
+    "stealth": [
+     0,
+     1,
+     2
+    ],
+    "heat": 10
+   },
+   "void_sig": {
+    "stealth": [
+     1,
+     1,
+     2
+    ],
+    "heat": 10
+   },
+   "chameleon": {
+    "stealth": [
+     0,
+     1,
+     2
+    ],
+    "heat": 6
+   }
+  },
+  "partial_wing": {
+   "jump": {
+    "light": 2,
+    "medium": 2,
+    "heavy": 1,
+    "assault": 1
+   },
+   "cooling": 3
+  },
+  "ppc_capacitor": {
+   "damage": 5,
+   "heat": 5
+  },
+  "shield": {
+   "small": 11,
+   "medium": 18,
+   "large": 25
+  },
+  "modular_armor": 10,
+  "harjel_repair": {
+   "ii": 1,
+   "iii": 2
+  },
+  "coolers": {
+   "coolant": {
+    "at_heat": 14,
+    "uses": 1,
+    "per_sink": 1.0
+   },
+   "radical_hs": {
+    "at_heat": 14,
+    "uses": 3,
+    "per_sink": 1.0
+   },
+   "coolant_system": {
+    "at_heat": 14,
+    "uses": 1,
+    "shed": 9.0
+   }
+  },
+  "tsemp": {
+   "interfere_at": 7,
+   "shutdown_at": 9,
+   "to_hit": 2,
+   "recharge_turns": 2,
+   "mods": {
+    "light": 2,
+    "medium": 1,
+    "heavy": 0,
+    "assault": -1,
+    "vehicle": 2
+   }
+  },
+  "taser": {
+   "interfere_at": 8,
+   "shutdown_at": 11,
+   "to_hit": 1,
+   "recharge_turns": 1,
+   "mods": {
+    "light": 1,
+    "medium": 0,
+    "heavy": -1,
+    "assault": -2,
+    "vehicle": 2
+   }
+  },
+  "plasma": {
+   "plasma": [
+    1,
+    6
+   ],
+   "hplasma": [
+    2,
+    6
+   ],
+   "lplasma": [
+    1,
+    3
+   ],
+   "plcannon": [
+    2,
+    6
+   ]
+  },
+  "artillery": {
+   "flight_s": 4.0,
+   "flight_s_per_hex": 0.12,
+   "radius_m": 45.0,
+   "splash": 0.5,
+   "scatter_m": 75.0,
+   "building_damage": 1.0,
+   "ignite_tn": 9
+  },
+  "artcannon": {
+   "splash_m": 35.0,
+   "splash": 0.5
+  },
+  "pods": {
+   "platoon_losses": [
+    2,
+    6
+   ],
+   "suit_damage": 6
+  },
+  "mpod": [
+   15,
+   10,
+   5
+  ],
+  "hag_cluster": {
+   "short": 2,
+   "medium": 0,
+   "long": -2
+  },
+  "industrial_cockpit_to_hit": 1,
+  "aes_to_hit": -1,
+  "apollo": {
+   "to_hit": -1,
+   "cluster": -1
+  },
+  "blue_shield": 0.5,
+  "talons_kick": 1.5,
+  "spikes_charge": 2,
+  "booby_trap": {
+   "radius_m": 60.0,
+   "per_tons": 2.0
+  }
+ }
+}

@@ -1,0 +1,847 @@
+{
+ "_note": "Arena themes drive the procedural generator. Arena names and sectors follow Solaris lore from general knowledge; verify against your sourcebooks and edit freely.",
+ "themes": {
+  "bowl": {
+   "label": "Open Bowl",
+   "size_cells": [
+    44,
+    52
+   ],
+   "height_levels": 2,
+   "height_scale": 0.035,
+   "light_woods": 0.04,
+   "heavy_woods": 0.0,
+   "rough": 0.06,
+   "water": 0.0,
+   "buildings": 6,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    2
+   ],
+   "ground": [
+    0.55,
+    0.5,
+    0.4
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "conditions": {
+    "night": 0.25,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 6,
+     "rain": 2,
+     "wind": 1
+    }
+   }
+  },
+  "factory": {
+   "label": "Factory",
+   "size_cells": [
+    42,
+    50
+   ],
+   "height_levels": 1,
+   "height_scale": 0.02,
+   "light_woods": 0.0,
+   "heavy_woods": 0.0,
+   "rough": 0.12,
+   "water": 0.03,
+   "buildings": 22,
+   "building_size": [
+    2,
+    6
+   ],
+   "building_height": [
+    1,
+    4
+   ],
+   "ground": [
+    0.42,
+    0.41,
+    0.4
+   ],
+   "pavement": 0.55,
+   "hazards": [
+    {
+     "type": "flame_jets",
+     "count": 4,
+     "period": 18.0,
+     "active": 4.0
+    }
+   ],
+   "conditions": {
+    "night": 0.3,
+    "dusk": 0.1,
+    "weather": {
+     "clear": 6,
+     "rain": 1,
+     "fog": 1
+    }
+   },
+   "industrial": true
+  },
+  "jungle": {
+   "label": "Jungle",
+   "size_cells": [
+    44,
+    52
+   ],
+   "height_levels": 2,
+   "height_scale": 0.05,
+   "light_woods": 0.28,
+   "heavy_woods": 0.22,
+   "rough": 0.04,
+   "water": 0.08,
+   "buildings": 3,
+   "building_size": [
+    2,
+    3
+   ],
+   "building_height": [
+    1,
+    2
+   ],
+   "ground": [
+    0.3,
+    0.42,
+    0.22
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "conditions": {
+    "night": 0.2,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 4,
+     "rain": 3,
+     "fog": 2
+    }
+   }
+  },
+  "boreal": {
+   "label": "Boreal",
+   "size_cells": [
+    46,
+    56
+   ],
+   "height_levels": 4,
+   "height_scale": 0.06,
+   "light_woods": 0.14,
+   "heavy_woods": 0.05,
+   "rough": 0.14,
+   "water": 0.12,
+   "buildings": 2,
+   "building_size": [
+    2,
+    3
+   ],
+   "building_height": [
+    1,
+    2
+   ],
+   "ground": [
+    0.62,
+    0.66,
+    0.66
+   ],
+   "pavement": 0.0,
+   "hazards": [
+    {
+     "type": "steam_vents",
+     "count": 2,
+     "period": 30.0,
+     "active": 6.0
+    }
+   ],
+   "conditions": {
+    "night": 0.2,
+    "dusk": 0.2,
+    "weather": {
+     "clear": 4,
+     "snow": 3,
+     "fog": 1,
+     "wind": 1
+    }
+   }
+  },
+  "urban": {
+   "label": "Urban",
+   "size_cells": [
+    44,
+    52
+   ],
+   "height_levels": 1,
+   "height_scale": 0.02,
+   "light_woods": 0.03,
+   "heavy_woods": 0.0,
+   "rough": 0.05,
+   "water": 0.0,
+   "buildings": 30,
+   "building_size": [
+    3,
+    6
+   ],
+   "building_height": [
+    2,
+    6
+   ],
+   "ground": [
+    0.48,
+    0.47,
+    0.46
+   ],
+   "pavement": 0.85,
+   "grid_streets": true,
+   "hazards": [
+    {
+     "type": "shock_pylons",
+     "count": 4,
+     "period": 15.0,
+     "active": 0.5,
+     "reach_m": 45.0,
+     "damage": 5
+    }
+   ],
+   "conditions": {
+    "night": 0.35,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 6,
+     "rain": 2,
+     "fog": 1
+    }
+   }
+  },
+  "canyon": {
+   "label": "Canyon",
+   "size_cells": [
+    46,
+    54
+   ],
+   "height_levels": 5,
+   "height_scale": 0.075,
+   "light_woods": 0.03,
+   "heavy_woods": 0.0,
+   "rough": 0.2,
+   "water": 0.02,
+   "buildings": 2,
+   "building_size": [
+    2,
+    3
+   ],
+   "building_height": [
+    1,
+    2
+   ],
+   "ground": [
+    0.6,
+    0.45,
+    0.32
+   ],
+   "pavement": 0.0,
+   "hazards": [
+    {
+     "type": "steam_vents",
+     "count": 4,
+     "period": 24.0,
+     "active": 6.0
+    }
+   ],
+   "conditions": {
+    "night": 0.2,
+    "dusk": 0.2,
+    "weather": {
+     "clear": 5,
+     "wind": 2,
+     "fog": 1
+    }
+   }
+  },
+  "bf_plains": {
+   "label": "Plains",
+   "size_cells": [
+    130,
+    150
+   ],
+   "height_levels": 2,
+   "height_scale": 0.018,
+   "light_woods": 0.07,
+   "heavy_woods": 0.03,
+   "rough": 0.04,
+   "water": 0.02,
+   "rivers": 0.35,
+   "roads": 2,
+   "ground": [
+    0.46,
+    0.5,
+    0.3
+   ],
+   "conditions": {
+    "night": 0.18,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 6,
+     "rain": 2,
+     "wind": 2,
+     "fog": 1
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "town",
+    "village"
+   ]
+  },
+  "bf_hills": {
+   "label": "Rolling hills",
+   "size_cells": [
+    125,
+    145
+   ],
+   "height_levels": 4,
+   "height_scale": 0.03,
+   "light_woods": 0.12,
+   "heavy_woods": 0.06,
+   "rough": 0.06,
+   "water": 0.02,
+   "rivers": 0.4,
+   "roads": 1,
+   "ground": [
+    0.42,
+    0.47,
+    0.28
+   ],
+   "conditions": {
+    "night": 0.18,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 5,
+     "rain": 2,
+     "fog": 2,
+     "wind": 1
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "village",
+    "village"
+   ]
+  },
+  "bf_forest": {
+   "label": "Forest",
+   "size_cells": [
+    120,
+    140
+   ],
+   "height_levels": 3,
+   "height_scale": 0.028,
+   "light_woods": 0.26,
+   "heavy_woods": 0.2,
+   "rough": 0.04,
+   "water": 0.02,
+   "rivers": 0.5,
+   "roads": 1,
+   "ground": [
+    0.34,
+    0.42,
+    0.24
+   ],
+   "conditions": {
+    "night": 0.18,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 4,
+     "rain": 3,
+     "fog": 2
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "village"
+   ]
+  },
+  "bf_jungle": {
+   "label": "Jungle",
+   "size_cells": [
+    115,
+    135
+   ],
+   "height_levels": 2,
+   "height_scale": 0.03,
+   "light_woods": 0.3,
+   "heavy_woods": 0.3,
+   "rough": 0.03,
+   "water": 0.06,
+   "rivers": 0.7,
+   "roads": 1,
+   "ground": [
+    0.3,
+    0.42,
+    0.22
+   ],
+   "conditions": {
+    "night": 0.2,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 3,
+     "rain": 4,
+     "fog": 2
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "village"
+   ]
+  },
+  "bf_desert": {
+   "label": "Desert",
+   "size_cells": [
+    135,
+    155
+   ],
+   "height_levels": 3,
+   "height_scale": 0.022,
+   "light_woods": 0.0,
+   "heavy_woods": 0.0,
+   "rough": 0.12,
+   "water": 0.0,
+   "rivers": 0.0,
+   "roads": 1,
+   "ground": [
+    0.72,
+    0.62,
+    0.42
+   ],
+   "conditions": {
+    "night": 0.2,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 7,
+     "wind": 3
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "town",
+    "industrial"
+   ]
+  },
+  "bf_badlands": {
+   "label": "Badlands",
+   "size_cells": [
+    125,
+    145
+   ],
+   "height_levels": 5,
+   "height_scale": 0.04,
+   "light_woods": 0.02,
+   "heavy_woods": 0.0,
+   "rough": 0.18,
+   "water": 0.01,
+   "rivers": 0.15,
+   "roads": 1,
+   "ground": [
+    0.58,
+    0.46,
+    0.34
+   ],
+   "conditions": {
+    "night": 0.2,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 6,
+     "wind": 3,
+     "fog": 1
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "industrial"
+   ]
+  },
+  "bf_arctic": {
+   "label": "Tundra",
+   "size_cells": [
+    125,
+    145
+   ],
+   "height_levels": 3,
+   "height_scale": 0.025,
+   "light_woods": 0.06,
+   "heavy_woods": 0.02,
+   "rough": 0.1,
+   "water": 0.03,
+   "rivers": 0.2,
+   "roads": 1,
+   "ground": [
+    0.82,
+    0.84,
+    0.86
+   ],
+   "conditions": {
+    "night": 0.25,
+    "dusk": 0.2,
+    "weather": {
+     "clear": 3,
+     "snow": 5,
+     "wind": 2,
+     "fog": 1
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "village",
+    "industrial"
+   ]
+  },
+  "bf_urban": {
+   "label": "City outskirts",
+   "size_cells": [
+    115,
+    135
+   ],
+   "height_levels": 2,
+   "height_scale": 0.02,
+   "light_woods": 0.06,
+   "heavy_woods": 0.02,
+   "rough": 0.03,
+   "water": 0.02,
+   "rivers": 0.4,
+   "roads": 3,
+   "ground": [
+    0.44,
+    0.46,
+    0.38
+   ],
+   "conditions": {
+    "night": 0.25,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 5,
+     "rain": 3,
+     "fog": 2
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "city"
+   ]
+  },
+  "bf_mountains": {
+   "label": "Mountain pass",
+   "size_cells": [
+    120,
+    140
+   ],
+   "height_levels": 6,
+   "height_scale": 0.035,
+   "light_woods": 0.1,
+   "heavy_woods": 0.06,
+   "rough": 0.16,
+   "water": 0.02,
+   "rivers": 0.3,
+   "roads": 1,
+   "ground": [
+    0.5,
+    0.5,
+    0.44
+   ],
+   "conditions": {
+    "night": 0.2,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 4,
+     "snow": 2,
+     "fog": 2,
+     "wind": 2
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "village"
+   ]
+  },
+  "bf_coast": {
+   "label": "Coastline",
+   "size_cells": [
+    125,
+    145
+   ],
+   "height_levels": 3,
+   "height_scale": 0.025,
+   "light_woods": 0.1,
+   "heavy_woods": 0.04,
+   "rough": 0.06,
+   "water": 0.16,
+   "rivers": 0.3,
+   "roads": 1,
+   "ground": [
+    0.48,
+    0.5,
+    0.34
+   ],
+   "conditions": {
+    "night": 0.18,
+    "dusk": 0.15,
+    "weather": {
+     "clear": 4,
+     "rain": 3,
+     "fog": 3
+    }
+   },
+   "battlefield": true,
+   "buildings": 0,
+   "building_size": [
+    2,
+    4
+   ],
+   "building_height": [
+    1,
+    3
+   ],
+   "pavement": 0.0,
+   "hazards": [],
+   "settlements": [
+    "town",
+    "village"
+   ]
+  }
+ },
+ "arenas": [
+  {
+   "id": "steiner_stadium",
+   "name": "Steiner Stadium",
+   "sector": "Silesia",
+   "house": "Lyran Commonwealth",
+   "theme": "bowl",
+   "prestige": 1.4,
+   "floodlights": true
+  },
+  {
+   "id": "the_factory",
+   "name": "The Factory",
+   "sector": "Montenegro",
+   "house": "Free Worlds League",
+   "theme": "factory",
+   "prestige": 1.3,
+   "floodlights": true
+  },
+  {
+   "id": "ishiyama",
+   "name": "Ishiyama Arena",
+   "sector": "Kobe",
+   "house": "Draconis Combine",
+   "theme": "canyon",
+   "prestige": 1.3,
+   "floodlights": true
+  },
+  {
+   "id": "the_jungle",
+   "name": "The Jungle",
+   "sector": "Cathay",
+   "house": "Capellan Confederation",
+   "theme": "jungle",
+   "prestige": 1.2,
+   "floodlights": false
+  },
+  {
+   "id": "boreal_valley",
+   "name": "Boreal Valley",
+   "sector": "Black Hills",
+   "house": "Federated Suns",
+   "theme": "boreal",
+   "prestige": 1.2,
+   "floodlights": false
+  },
+  {
+   "id": "the_coliseum",
+   "name": "Solaris Coliseum",
+   "sector": "International Zone",
+   "house": "",
+   "theme": "urban",
+   "prestige": 1.6,
+   "floodlights": true
+  },
+  {
+   "id": "pit_9",
+   "name": "Pit Nine",
+   "sector": "International Zone",
+   "house": "",
+   "theme": "bowl",
+   "prestige": 0.8,
+   "floodlights": false
+  }
+ ],
+ "sectors": [
+  {
+   "id": "Silesia",
+   "house": "Lyran Commonwealth",
+   "faction_id": 54,
+   "color": [
+    0.15,
+    0.35,
+    0.75
+   ],
+   "camo": "Lyran Commonwealth.png"
+  },
+  {
+   "id": "Kobe",
+   "house": "Draconis Combine",
+   "faction_id": 27,
+   "color": [
+    0.75,
+    0.12,
+    0.12
+   ],
+   "camo": "Draconis Combine.png"
+  },
+  {
+   "id": "Montenegro",
+   "house": "Free Worlds League",
+   "faction_id": 30,
+   "color": [
+    0.5,
+    0.15,
+    0.6
+   ],
+   "camo": "Free Worlds League.png"
+  },
+  {
+   "id": "Cathay",
+   "house": "Capellan Confederation",
+   "faction_id": 5,
+   "color": [
+    0.15,
+    0.55,
+    0.25
+   ],
+   "camo": "Capellan Confederation.png"
+  },
+  {
+   "id": "Black Hills",
+   "house": "Federated Suns",
+   "faction_id": 29,
+   "color": [
+    0.85,
+    0.6,
+    0.1
+   ],
+   "camo": "Federated Suns.png"
+  },
+  {
+   "id": "International Zone",
+   "house": "",
+   "faction_id": 34,
+   "color": [
+    0.55,
+    0.55,
+    0.58
+   ],
+   "camo": ""
+  }
+ ]
+}
